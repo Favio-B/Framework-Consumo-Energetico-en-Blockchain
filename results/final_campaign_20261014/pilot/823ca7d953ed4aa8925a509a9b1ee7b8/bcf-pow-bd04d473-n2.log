@@ -1,0 +1,25 @@
+{"event": "ready", "node_id": 2, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":2,"tx_count":0,"ts":1792027805.1518593,"node_id":2}
+[n2] send_fail peer=3 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":2,"miner_id":2,"tx_count":0,"ts":1792027805.8460844,"node_id":2}
+{"event":"block_mined","index":3,"miner_id":2,"tx_count":0,"ts":1792027807.473207,"node_id":2}
+{"event":"block_mined","index":4,"miner_id":2,"tx_count":0,"ts":1792027807.4927847,"node_id":2}
+{"event":"block_mined","index":5,"miner_id":2,"tx_count":0,"ts":1792027807.497512,"node_id":2}
+{"event":"block_mined","index":6,"miner_id":2,"tx_count":0,"ts":1792027807.637818,"node_id":2}
+{"event":"block_mined","index":7,"miner_id":2,"tx_count":0,"ts":1792027807.8693566,"node_id":2}
+{"event":"block_mined","index":8,"miner_id":2,"tx_count":0,"ts":1792027807.9062495,"node_id":2}
+{"event":"block_mined","index":9,"miner_id":2,"tx_count":0,"ts":1792027807.9966679,"node_id":2}
+{"event":"block_mined","index":10,"miner_id":2,"tx_count":0,"ts":1792027808.5890765,"node_id":2}
+{"event":"block_mined","index":11,"miner_id":2,"tx_count":0,"ts":1792027808.9810963,"node_id":2}
+{"event":"block_mined","index":12,"miner_id":2,"tx_count":0,"ts":1792027809.2565827,"node_id":2}
+{"event":"block_mined","index":13,"miner_id":2,"tx_count":0,"ts":1792027809.3029976,"node_id":2}
+{"event":"block_mined","index":14,"miner_id":2,"tx_count":0,"ts":1792027810.1358597,"node_id":2}
+{"event":"block_mined","index":15,"miner_id":2,"tx_count":0,"ts":1792027810.223895,"node_id":2}
+{"event":"block_mined","index":16,"miner_id":2,"tx_count":0,"ts":1792027810.5109282,"node_id":2}
+{"event":"block_mined","index":17,"miner_id":2,"tx_count":0,"ts":1792027811.276691,"node_id":2}
+{"event":"block_mined","index":18,"miner_id":2,"tx_count":0,"ts":1792027811.3597896,"node_id":2}
+{"event":"block_mined","index":19,"miner_id":2,"tx_count":0,"ts":1792027811.583247,"node_id":2}
+{"event":"block_mined","index":20,"miner_id":2,"tx_count":0,"ts":1792027813.4560513,"node_id":2}
+[n2] send_fail peer=3 err=TimeoutError('timed out')
+[n2] send_fail peer=0 err=TimeoutError('timed out')
+[n2] send_fail peer=3 err=TimeoutError('timed out')

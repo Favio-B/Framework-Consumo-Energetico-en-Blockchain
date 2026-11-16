@@ -1,0 +1,6 @@
+{"event": "ready", "node_id": 2, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":2,"tx_count":0,"ts":1792029501.854027,"node_id":2}
+[n2] send_fail peer=3 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":2,"miner_id":2,"tx_count":0,"ts":1792029502.0216455,"node_id":2}
+[n2] send_fail peer=3 err=ConnectionRefusedError(111, 'Connection refused')
+[n2] send_fail peer=3 err=TimeoutError('timed out')

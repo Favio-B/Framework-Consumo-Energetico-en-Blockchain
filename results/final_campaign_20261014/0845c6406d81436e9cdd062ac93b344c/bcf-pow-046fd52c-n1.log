@@ -1,0 +1,8 @@
+{"event": "ready", "node_id": 1, "port": 5000, "difficulty_bits": 16}
+{"event":"block_received","index":1,"miner_id":0,"tx_count":0,"ts":1792029302.2825754,"node_id":1}
+{"event":"block_received","index":2,"miner_id":0,"tx_count":0,"ts":1792029302.634085,"node_id":1}
+{"event":"block_received","index":3,"miner_id":0,"tx_count":0,"ts":1792029302.727548,"node_id":1}
+{"event":"block_mined","index":4,"miner_id":1,"tx_count":0,"ts":1792029303.1603582,"node_id":1}
+{"event":"block_mined","index":5,"miner_id":1,"tx_count":0,"ts":1792029303.5858777,"node_id":1}
+[n1] send_fail peer=3 err=TimeoutError('timed out')
+[n1] send_fail peer=2 err=TimeoutError('timed out')

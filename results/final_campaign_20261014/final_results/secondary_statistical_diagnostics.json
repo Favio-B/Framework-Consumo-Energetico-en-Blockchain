@@ -1,0 +1,338 @@
+[
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "throughput_tps",
+    "test": "ANOVA",
+    "n_by_algorithm": {
+      "pow": 8,
+      "pos": 9,
+      "pbft": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": 0.007752540338051974,
+    "anova_variance_check_passed": false,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "latency_ms_p50",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pow": 8,
+      "pos": 9,
+      "pbft": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": 0.0475923277874133,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": true,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "latency_ms_p95",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pow": 8,
+      "pos": 9,
+      "pbft": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": 0.008746418207398677,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": true,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "finality_ms_p95",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pow": 8,
+      "pos": 9,
+      "pbft": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": 0.008746418207398677,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": true,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "energy_joules",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pow": 8,
+      "pos": 9,
+      "pbft": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": 1.0630959235479302e-13,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": true,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "bytes_per_tx",
+    "test": "ANOVA",
+    "n_by_algorithm": {
+      "pow": 8,
+      "pos": 9,
+      "pbft": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": 6.336893337133504e-12,
+    "anova_variance_check_passed": false,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "throughput_tps",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pbft": 10,
+      "pos": 9,
+      "pow": 2
+    },
+    "minimum_5_per_group": false,
+    "levene_median_p": 0.4477428654999116,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "latency_ms_p50",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pbft": 10,
+      "pos": 9,
+      "pow": 2
+    },
+    "minimum_5_per_group": false,
+    "levene_median_p": 8.373942991218614e-11,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "latency_ms_p95",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pbft": 10,
+      "pos": 9,
+      "pow": 2
+    },
+    "minimum_5_per_group": false,
+    "levene_median_p": 0.854309381128344,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "finality_ms_p95",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pbft": 10,
+      "pos": 9,
+      "pow": 2
+    },
+    "minimum_5_per_group": false,
+    "levene_median_p": 0.6129472356952915,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "energy_joules",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pbft": 10,
+      "pos": 9,
+      "pow": 2
+    },
+    "minimum_5_per_group": false,
+    "levene_median_p": 0.15462668812767533,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "bytes_per_tx",
+    "test": "Kruskal-Wallis",
+    "n_by_algorithm": {
+      "pbft": 10,
+      "pos": 9,
+      "pow": 2
+    },
+    "minimum_5_per_group": false,
+    "levene_median_p": 2.5228445925385217e-46,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "metric": "throughput_tps",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "metric": "latency_ms_p50",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "metric": "latency_ms_p95",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "metric": "finality_ms_p95",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "metric": "energy_joules",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "metric": "bytes_per_tx",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 10
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "metric": "throughput_tps",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 5
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "metric": "latency_ms_p50",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 5
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "metric": "latency_ms_p95",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 5
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "metric": "finality_ms_p95",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 5
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "metric": "energy_joules",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 5
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "metric": "bytes_per_tx",
+    "test": "skipped",
+    "n_by_algorithm": {
+      "pow": 5
+    },
+    "minimum_5_per_group": true,
+    "levene_median_p": null,
+    "anova_variance_check_passed": null,
+    "eligible_secondary_inference": false,
+    "note": "Conditional on nonzero progress; use primary all-trial analysis for main claims. Levene is a diagnostic, not proof of equal variances."
+  }
+]

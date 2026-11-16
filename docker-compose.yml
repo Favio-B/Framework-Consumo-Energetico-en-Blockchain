@@ -1,0 +1,38 @@
+# =============================================================================
+# Auxiliary services for the consensus benchmark framework.
+#
+# The consensus containers (PoW / PoS / PBFT) are launched programmatically by
+# `orchestrator.scenario_runner.ScenarioRunner` with per-run UUIDs and dynamic
+# networks — they DO NOT belong here. This file only declares the long-lived
+# read-only viewer (the Flask dashboard) so a reviewer can `docker compose up`
+# and browse the results without setting up a Python venv.
+#
+# Usage (from blockchain-framework/):
+#     docker compose up -d              # start the dashboard
+#     docker compose down               # stop it
+#     docker compose build dashboard    # force-rebuild the image
+#
+# The dashboard mounts ./results/ read-only so any data persisted by
+# `python run_experiment.py run --config experiment.yaml` is visible.
+# =============================================================================
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    image: bcf-dashboard:latest
+    container_name: bcf-dashboard
+    environment:
+      BCF_DASHBOARD_HOST: 0.0.0.0
+      BCF_DASHBOARD_PORT: "5000"
+      BCF_DB_PATH: /app/results/final_campaign_20261014/experiments.db
+      BCF_DASHBOARD_RESULTS_DIR: /app/results/dashboard_analysis
+    ports:
+      - "5000:5000"
+    volumes:
+      # Read-only mount of the results directory: the dashboard never writes
+      # to the source tree. Plot rendering goes to BCF_DASHBOARD_RESULTS_DIR
+      # which lives inside the same mount, so it persists across restarts.
+      - ./results:/app/results
+    restart: unless-stopped

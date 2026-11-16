@@ -1,0 +1,879 @@
+{
+  "created_UTC": "2026-10-15T01:30:02.272824+00:00",
+  "local_date": "2026-10-14",
+  "seed": 20261014,
+  "source_sha256": {
+    "analysis/__init__.py": "92bdfa5489bfbb3c435b80029633e4327395916148f32516a8f539060b3bafd6",
+    "analysis/plot_generator.py": "5fc338ff48762a5787af672a581fb2cc91b145e0bb1b4eb9e941774da36e4997",
+    "analysis/report_builder.py": "8671a803012e2c01f39ea4d283eb54267bdd1f10050ce4c5b953ea091fa7ae5c",
+    "analysis/stat_pipeline.py": "bb3c47e6bbb8ac0d2df31112d9543ee3ec52a44b6c7f1e808c7485a1f42f1df4",
+    "consensus/__init__.py": "7434329adbe1b6dfaf510be3383bc790be21c3388b9f4d9a3095c136ee10d7c6",
+    "consensus/base.py": "342ab2d58a514521a3d67547b3e0ee12bb2948da8f8d015e17f129bde431a213",
+    "consensus/pbft/Dockerfile": "1d4d0ad4a34ba8b0d6d99275d9302614df5ab6e8faad4663918828165b51895b",
+    "consensus/pbft/__init__.py": "063194bd40f6e0e2800fb91e584e3cab36588fd63607772f56708b0a619982e6",
+    "consensus/pbft/module.py": "ab88e79d299c775bdf6bbbf1ac554a374e3d2b7e2423132ce3b8760ef4d9e925",
+    "consensus/pbft/node.py": "18a7494097dd691753a07517e4322b2ed97e072b6d597ceb2797658ad53a4185",
+    "consensus/pos/Dockerfile": "190d0269e76d55aa93f526f43c611a4db18d523e121eaf6ba388f03c0f654a0d",
+    "consensus/pos/__init__.py": "cefa1e6445b719b2c16f98814f4d3fd3139951155501c62b1d992df05733180e",
+    "consensus/pos/module.py": "8c8c997c8a97de7bf25bd15a199affaa9c4e586551b462e7e93a3c14322d77a4",
+    "consensus/pos/node.py": "c8831fdb2aea65eee94f7215ff305fae9c4b039973c63b3fbc459ab9e1565c1a",
+    "consensus/pow/Dockerfile": "8dfef21163aff4d15c5c10f5d1a8b65146b716e59df6c6f1942e6987613511b5",
+    "consensus/pow/__init__.py": "0b4464b1870898fd45699f059fd9ae3a350c87d168f023d29c583eb52325aa21",
+    "consensus/pow/module.py": "c558cf1d5d38df82f52b95966a3e11b52d240f18836dacfa02d4bfc580028b78",
+    "consensus/pow/node.py": "27412ed14d206bf5a4f6ced21b9697d08a256fac1a5e9c2d93e5745f1f6c086a",
+    "monitoring/__init__.py": "26e9c3c7bc298dede258261d9e1e916bf91d5a898f61615608a4402e910d0c79",
+    "monitoring/energy_estimator.py": "ae77bccf44cbe7b54e2d9f53c4111309755bcb7f641e246ff782e1305edd4a89",
+    "monitoring/net_monitor.py": "1ddab4f53c7e97e789a679d83fdf2aef31e266ec338253a17c34b6d70f466451",
+    "monitoring/resource_monitor.py": "7cb13bc3330813cfe4528b2a0f75a0b4ff2c0092fe23fa93934a96dcab21bebd",
+    "monitoring/tx_tracker.py": "3cb8a2e8cf65dd06a1df7c2b8d2c0a8b0997f2d47c8d004cf24c42f423e073a7",
+    "orchestrator/__init__.py": "7d55101382e186172837d667d91955e6c941faff80763a06d6dd0f57655d964f",
+    "orchestrator/docker_manager.py": "14a5053f1cde7779de64979d7ee9851d0032ab17fd77e908987785b4a65de55e",
+    "orchestrator/experiment_lock.py": "8be261eddd45bc7eb23aca89621cc849c8b2ad4b221791f20dbc1a0d5beffd20",
+    "orchestrator/network_controller.py": "5816438728272f7dbfa946101464079217d22af1e44a9e8141056f7f30091040",
+    "orchestrator/result_collector.py": "5f6f1265c1db55c81386ff337e153685c55d3ca07fb4ceb6d40435bd8fc4747b",
+    "orchestrator/scenario_runner.py": "e9c4126b82806054d9d74a167152b97c4f0d0ff1d6cd9437874387f97b98bd19",
+    "requirements.txt": "4503ef5e035f9791c3862842682fbeeb12fedc3db29bba90f61217eb812ddc46",
+    "run_experiment.py": "79a530a68a2fc189e16a30d82844b3b50b829e4d5b5fb76fec4c08b158dfa4cc",
+    "scripts/final_campaign.py": "a423b0877803e23f2f785faf4c7cef0eb6a44bbda53f3a84f24f28dfeff440e9",
+    "storage/__init__.py": "def193911cd9f3477aa0d6ba5331773ceebdbe1252c9f0a04558256137ef6b7a",
+    "storage/repository.py": "a80bbd607436d120c4e8b7d828837538c9a810f347978d39cfe7709be49410d5",
+    "storage/schema.sql": "f3f11b3c1edb619ff13e1760561f1c2db46b048e20bf2f59f51ebf6579476ae5"
+  },
+  "historical_db_sha256": "fbb37ad6b84b61a824a777cb9da957a90dea598e48b9316c1e0a5aa9615a91f0",
+  "images": {
+    "pow": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb",
+    "pos": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540",
+    "pbft": "sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29",
+    "pumba": "gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8",
+    "nettools": "ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1"
+  },
+  "configs": {
+    "final_n3_baseline": {
+      "experiment": {
+        "name": "final_n3_baseline",
+        "repetitions": 10,
+        "algorithms": [
+          "pow",
+          "pos",
+          "pbft"
+        ],
+        "seed": 20261014
+      },
+      "network": {
+        "driver": "pumba",
+        "nodes": 3,
+        "latency_ms": 50,
+        "bandwidth_kbps": 10000,
+        "packet_loss_pct": 0.0,
+        "tc_image": "ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1",
+        "pumba_image": "gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8"
+      },
+      "workload": {
+        "tx_count": 100,
+        "tx_rate_tps": 50
+      },
+      "hardware": {
+        "tdp_watts": 45
+      },
+      "resources": {
+        "cpu_limit": "2.0",
+        "mem_limit": "2g"
+      },
+      "pow": {
+        "difficulty_bits": 16,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+      },
+      "pos": {
+        "slot_seconds": 0.5,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540"
+      },
+      "runtime": {
+        "warmup_seconds": 30,
+        "settle_seconds": 5,
+        "run_timeout_seconds": 600,
+        "sample_interval_seconds": 1.0,
+        "paper_instrumentation": true
+      },
+      "storage": {
+        "results_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014",
+        "sqlite_path": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\experiments.db"
+      },
+      "pbft": {
+        "image": "sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29"
+      }
+    },
+    "final_n4_baseline": {
+      "experiment": {
+        "name": "final_n4_baseline",
+        "repetitions": 10,
+        "algorithms": [
+          "pow",
+          "pos",
+          "pbft"
+        ],
+        "seed": 20261014
+      },
+      "network": {
+        "driver": "pumba",
+        "nodes": 4,
+        "latency_ms": 50,
+        "bandwidth_kbps": 10000,
+        "packet_loss_pct": 0.0,
+        "tc_image": "ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1",
+        "pumba_image": "gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8"
+      },
+      "workload": {
+        "tx_count": 100,
+        "tx_rate_tps": 50
+      },
+      "hardware": {
+        "tdp_watts": 45
+      },
+      "resources": {
+        "cpu_limit": "2.0",
+        "mem_limit": "2g"
+      },
+      "pow": {
+        "difficulty_bits": 16,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+      },
+      "pos": {
+        "slot_seconds": 0.5,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540"
+      },
+      "runtime": {
+        "warmup_seconds": 30,
+        "settle_seconds": 5,
+        "run_timeout_seconds": 600,
+        "sample_interval_seconds": 1.0,
+        "paper_instrumentation": true
+      },
+      "storage": {
+        "results_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014",
+        "sqlite_path": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\experiments.db"
+      },
+      "pbft": {
+        "image": "sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29"
+      }
+    },
+    "final_pow_diff14": {
+      "experiment": {
+        "name": "final_pow_diff14",
+        "repetitions": 10,
+        "algorithms": [
+          "pow"
+        ],
+        "seed": 20261014
+      },
+      "network": {
+        "driver": "pumba",
+        "nodes": 3,
+        "latency_ms": 50,
+        "bandwidth_kbps": 10000,
+        "packet_loss_pct": 0.0,
+        "tc_image": "ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1",
+        "pumba_image": "gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8"
+      },
+      "workload": {
+        "tx_count": 100,
+        "tx_rate_tps": 50
+      },
+      "hardware": {
+        "tdp_watts": 45
+      },
+      "resources": {
+        "cpu_limit": "2.0",
+        "mem_limit": "2g"
+      },
+      "pow": {
+        "difficulty_bits": 14,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+      },
+      "pos": {
+        "slot_seconds": 0.5,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540"
+      },
+      "runtime": {
+        "warmup_seconds": 30,
+        "settle_seconds": 5,
+        "run_timeout_seconds": 600,
+        "sample_interval_seconds": 1.0,
+        "paper_instrumentation": true
+      },
+      "storage": {
+        "results_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014",
+        "sqlite_path": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\experiments.db"
+      },
+      "pbft": {
+        "image": "sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29"
+      }
+    },
+    "final_pow_diff18": {
+      "experiment": {
+        "name": "final_pow_diff18",
+        "repetitions": 10,
+        "algorithms": [
+          "pow"
+        ],
+        "seed": 20261014
+      },
+      "network": {
+        "driver": "pumba",
+        "nodes": 3,
+        "latency_ms": 50,
+        "bandwidth_kbps": 10000,
+        "packet_loss_pct": 0.0,
+        "tc_image": "ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1",
+        "pumba_image": "gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8"
+      },
+      "workload": {
+        "tx_count": 100,
+        "tx_rate_tps": 50
+      },
+      "hardware": {
+        "tdp_watts": 45
+      },
+      "resources": {
+        "cpu_limit": "2.0",
+        "mem_limit": "2g"
+      },
+      "pow": {
+        "difficulty_bits": 18,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+      },
+      "pos": {
+        "slot_seconds": 0.5,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540"
+      },
+      "runtime": {
+        "warmup_seconds": 30,
+        "settle_seconds": 5,
+        "run_timeout_seconds": 600,
+        "sample_interval_seconds": 1.0,
+        "paper_instrumentation": true
+      },
+      "storage": {
+        "results_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014",
+        "sqlite_path": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\experiments.db"
+      },
+      "pbft": {
+        "image": "sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29"
+      }
+    },
+    "final_pow_diff20": {
+      "experiment": {
+        "name": "final_pow_diff20",
+        "repetitions": 10,
+        "algorithms": [
+          "pow"
+        ],
+        "seed": 20261014
+      },
+      "network": {
+        "driver": "pumba",
+        "nodes": 3,
+        "latency_ms": 50,
+        "bandwidth_kbps": 10000,
+        "packet_loss_pct": 0.0,
+        "tc_image": "ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1",
+        "pumba_image": "gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8"
+      },
+      "workload": {
+        "tx_count": 100,
+        "tx_rate_tps": 50
+      },
+      "hardware": {
+        "tdp_watts": 45
+      },
+      "resources": {
+        "cpu_limit": "2.0",
+        "mem_limit": "2g"
+      },
+      "pow": {
+        "difficulty_bits": 20,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+      },
+      "pos": {
+        "slot_seconds": 0.5,
+        "block_size": 20,
+        "confirmations": 1,
+        "image": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540"
+      },
+      "runtime": {
+        "warmup_seconds": 30,
+        "settle_seconds": 5,
+        "run_timeout_seconds": 600,
+        "sample_interval_seconds": 1.0,
+        "paper_instrumentation": true
+      },
+      "storage": {
+        "results_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014",
+        "sqlite_path": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\experiments.db"
+      },
+      "pbft": {
+        "image": "sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29"
+      }
+    }
+  },
+  "jobs": [
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 0
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 1
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 2
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 3
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 4
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 5
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 6
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 7
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 8
+    },
+    {
+      "experiment": "final_pow_diff14",
+      "algorithm": "pow",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_pow_diff18",
+      "algorithm": "pow",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pbft",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pos",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pos",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pbft",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_pow_diff20",
+      "algorithm": "pow",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_n4_baseline",
+      "algorithm": "pow",
+      "repetition": 9
+    },
+    {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 9
+    }
+  ],
+  "planned_runs": 90,
+  "host": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]",
+    "cpu_logical": 22,
+    "cpu_physical": 16,
+    "memory_bytes": 33945935872,
+    "docker": {
+      "NCPU": 22,
+      "MemTotal": 16561897472,
+      "KernelVersion": "6.6.87.2-microsoft-standard-WSL2",
+      "OperatingSystem": "Docker Desktop",
+      "ServerVersion": "29.4.0",
+      "CgroupVersion": "2"
+    }
+  },
+  "packages_host": {
+    "blinker": "1.9.0",
+    "certifi": "2026.4.22",
+    "cffi": "2.0.0",
+    "charset-normalizer": "3.4.7",
+    "click": "8.3.3",
+    "colorama": "0.4.6",
+    "contourpy": "1.3.3",
+    "cryptography": "44.0.3",
+    "cycler": "0.12.1",
+    "docker": "7.1.0",
+    "Flask": "3.1.3",
+    "fonttools": "4.62.1",
+    "idna": "3.13",
+    "iniconfig": "2.3.0",
+    "itsdangerous": "2.2.0",
+    "Jinja2": "3.1.6",
+    "kiwisolver": "1.5.0",
+    "MarkupSafe": "3.0.3",
+    "matplotlib": "3.10.8",
+    "numpy": "2.4.4",
+    "packaging": "26.1",
+    "pandas": "2.3.3",
+    "pillow": "12.2.0",
+    "pip": "25.2",
+    "pluggy": "1.6.0",
+    "psutil": "6.1.1",
+    "pycparser": "3.0",
+    "Pygments": "2.20.0",
+    "pyparsing": "3.3.2",
+    "pytest": "8.4.2",
+    "pytest-timeout": "2.4.0",
+    "python-dateutil": "2.9.0.post0",
+    "pytz": "2026.1.post1",
+    "pywin32": "311",
+    "PyYAML": "6.0.3",
+    "reportlab": "4.4.10",
+    "requests": "2.33.1",
+    "scipy": "1.17.1",
+    "seaborn": "0.13.2",
+    "six": "1.17.0",
+    "tzdata": "2026.1",
+    "urllib3": "2.6.3",
+    "Werkzeug": "3.1.8"
+  },
+  "packages_images": {
+    "pow": "",
+    "pos": "cffi==2.0.0\ncryptography==44.0.3\npycparser==3.0\n",
+    "pbft": "cffi==2.0.0\ncryptography==44.0.3\npycparser==3.0\n"
+  },
+  "other_active_containers": [
+    {
+      "name": "marketanalyzer_frontend",
+      "image": "sha256:e3b99fa81b69ace7a47d1d3c6129867e245182e333de8f75c565217d67b7cee3"
+    },
+    {
+      "name": "marketanalyzer_backend",
+      "image": "sha256:65c52941118b19850d1da6faa84681326af08e935ed1982771b485f510b7518e"
+    },
+    {
+      "name": "marketanalyzer_redis",
+      "image": "sha256:efc27681bf81e6ed55cb581718b7818c6c04c39b1f9aa40854edd3ea2241b6ed"
+    }
+  ],
+  "methodology": {
+    "load": "100 requested tx at 50 TPS; not a saturation experiment",
+    "window": "submit duration plus 5 seconds; events censored at a recorded wall-clock cutoff",
+    "energy": "CPU proxy averaged over recorded sample durations, host logical CPU denominator; includes sampling readiness interval",
+    "network": "50 ms deterministic egress delay plus 10 Mbps; verified qdisc per node before observation",
+    "quorum": "2*floor((n-1)/3)+1 on all algorithms, n3=1 and n4=3; not security-equivalent",
+    "failures": "all 10 planned repetitions retained, no replacement or adaptive stopping",
+    "sweep_diff16": "reuse final_n3_baseline/PoW (same configuration) instead of duplicating observations",
+    "historical": "older datasets and incomplete n4_baseline_v2 remain frozen and are superseded, not completed by mixing dates",
+    "seeds": "job order and deterministic test signing keys; timestamps, scheduling and nonce-search trajectories remain nondeterministic"
+  }
+}

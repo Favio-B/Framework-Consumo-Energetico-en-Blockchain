@@ -1,0 +1,3 @@
+{"event": "ready", "node_id": 0, "port": 5000, "difficulty_bits": 16}
+{"event":"block_received","index":1,"miner_id":1,"tx_count":0,"ts":1792029809.704792,"node_id":0}
+{"event":"block_mined","index":2,"miner_id":0,"tx_count":0,"ts":1792029809.7444434,"node_id":0}

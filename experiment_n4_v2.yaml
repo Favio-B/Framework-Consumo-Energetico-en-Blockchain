@@ -1,0 +1,56 @@
+# =============================================================================
+# experiment_n4_v2.yaml — configuración base de la campaña final 2026-10-14.
+# scripts/final_campaign.py la lee y deriva los cinco grupos publicados
+# (ver results/final_campaign_20261014/configs/). No renombrar: el script
+# está congelado por hash en el manifiesto de la campaña.
+# =============================================================================
+
+experiment:
+  name: "n4_baseline_v2"
+  repetitions: 10
+  algorithms: [pow, pbft, pos]
+
+
+network:
+  driver: pumba
+  nodes: 4
+  latency_ms: 50
+  bandwidth_kbps: 10000
+  packet_loss_pct: 0.0
+
+
+workload:
+  tx_count: 100
+  tx_rate_tps: 50
+
+
+hardware:
+  tdp_watts: 45
+
+
+resources:
+  cpu_limit: "2.0"
+  mem_limit: "2g"
+
+
+pow:
+  difficulty_bits: 16
+  block_size: 20
+  confirmations: 1
+
+pos:
+  slot_seconds: 0.5
+  block_size: 20
+  confirmations: 1
+
+
+runtime:
+  warmup_seconds: 30
+  settle_seconds: 5
+  run_timeout_seconds: 600
+  sample_interval_seconds: 1.0
+
+
+storage:
+  results_dir: "./results"
+  sqlite_path: "./results/experiments.db"

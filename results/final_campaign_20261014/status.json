@@ -1,0 +1,18 @@
+{
+  "completed": 90,
+  "planned": 90,
+  "last": {
+    "job": {
+      "experiment": "final_n3_baseline",
+      "algorithm": "pow",
+      "repetition": 9
+    },
+    "run_id": "4dc98355aca44a2c88286547640633e3",
+    "status": "partial",
+    "committed": 19,
+    "submitted": 100,
+    "energy_J": 44.96435737218524,
+    "host_cpu_before": 17.5,
+    "finished_UTC": "2026-10-15T02:07:49.519704+00:00"
+  }
+}

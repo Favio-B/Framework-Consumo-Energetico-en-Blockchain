@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Si usas este software o sus datos, cítalo así."
+title: "Framework experimental para la evaluación energética y de desempeño de algoritmos de consenso en blockchain"
+type: software
+authors:
+  - family-names: "Bernal González"
+    given-names: "Favio Alejandro"
+    orcid: "https://orcid.org/0009-0002-9210-5688"
+    affiliation: "Universidad Libre, Bogotá, Colombia"
+  - family-names: "López Rugeles"
+    given-names: "Luisa María"
+    orcid: "https://orcid.org/0009-0004-6906-9740"
+    affiliation: "Universidad Libre, Bogotá, Colombia"
+version: "1.0.0"
+date-released: "2026-11-16"
+keywords:
+  - blockchain
+  - consensus algorithms
+  - energy consumption
+  - proof of work
+  - proof of stake
+  - PBFT
+repository-code: "https://github.com/Favio-B/Framework-Consumo-Energetico-en-Blockchain"
+url: "https://favio-b.github.io/Framework-Consumo-Energetico-en-Blockchain/"

@@ -1,0 +1,58 @@
+# =============================================================================
+# experiment.yaml — configuración de referencia del framework
+# =============================================================================
+# Equivale al escenario base de la campaña final (n=3, PoW/PoS/PBFT,
+# PoW 16 bits, 100 tx a 50 TPS, red 50 ms / 10 Mbps). Los parámetros exactos
+# de cada grupo publicado están en results/final_campaign_20261014/configs/.
+#
+#   python run_experiment.py run --config experiment.yaml --dry-run
+#   python run_experiment.py run --config experiment.yaml --analyze-after
+# =============================================================================
+
+experiment:
+  name: "baseline_n3"          # cambiar por variante para no mezclar datasets
+  repetitions: 10
+  algorithms: [pow, pos, pbft]
+  seed: 20261014               # orden de ejecución y claves de prueba
+
+network:
+  driver: pumba                # pumba (Docker Desktop) | tc (host Linux)
+  nodes: 3
+  latency_ms: 50               # retardo de salida por nodo
+  bandwidth_kbps: 10000        # 10 Mbps
+  packet_loss_pct: 0.0
+
+workload:
+  tx_count: 100
+  tx_rate_tps: 50
+
+hardware:
+  # Modelo proxy: E = Σ (cpu_i% / 100) / N_cpu_host · tdp_watts · t
+  # Ajustar al TDP del procesador del host (Intel Core Ultra 9 185H = 45 W).
+  tdp_watts: 45
+
+resources:                     # límites idénticos para todos los nodos
+  cpu_limit: "2.0"
+  mem_limit: "2g"
+
+pow:
+  difficulty_bits: 16          # barrido publicado: 14, 16, 18, 20
+  block_size: 20
+  confirmations: 1
+
+pos:
+  slot_seconds: 0.5
+  block_size: 20
+  confirmations: 1
+
+runtime:
+  warmup_seconds: 30
+  settle_seconds: 5            # observación = envío + 5 s
+  run_timeout_seconds: 600
+  sample_interval_seconds: 1.0
+  # paper_instrumentation: true  # verifica reglas netem por nodo; requiere
+  #                              # network.tc_image (ver configs de la campaña)
+
+storage:
+  results_dir: "./results"
+  sqlite_path: "./results/experiments.db"

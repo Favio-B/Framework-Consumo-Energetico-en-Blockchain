@@ -1,0 +1,5 @@
+# Almacenar todo byte a byte, sin conversión de fin de línea.
+# El código y los datos de la campaña se verifican por SHA-256
+# (manifest.json, delivery_sha256.csv): cualquier conversión CRLF/LF
+# rompería esa verificación al clonar en otro sistema.
+* -text

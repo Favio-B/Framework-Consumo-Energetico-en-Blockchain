@@ -1,0 +1,19 @@
+﻿experiment,metric,a,b,test,U,p_raw,cliffs_delta_a_minus_b,p_holm,reject_at_0_05
+final_n3_baseline,energy_joules,pow,pbft,"Mann-Whitney U, two-sided asymptotic, tie correction",100.0,0.00018267179110955002,1.0,0.0029227486577528003,True
+final_n3_baseline,energy_joules,pow,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",100.0,0.00018267179110955002,1.0,0.0029227486577528003,True
+final_n3_baseline,energy_joules,pbft,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",100.0,0.00018267179110955002,1.0,0.0029227486577528003,True
+final_n3_baseline,throughput_observation_tps,pow,pbft,"Mann-Whitney U, two-sided asymptotic, tie correction",10.0,0.0028169056281937455,-0.8,0.016901433769162474,True
+final_n3_baseline,throughput_observation_tps,pow,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",16.0,0.01120695479765041,-0.68,0.03362086439295123,True
+final_n3_baseline,throughput_observation_tps,pbft,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",21.0,0.031209012771740218,-0.58,0.062418025543480436,False
+final_n3_baseline,completion_fraction,pow,pbft,"Mann-Whitney U, two-sided asymptotic, tie correction",5.0,0.0002267631223660232,-0.9,0.0029227486577528003,True
+final_n3_baseline,completion_fraction,pow,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",13.5,0.003554666047197844,-0.73,0.016901433769162474,True
+final_n3_baseline,completion_fraction,pbft,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",55.0,0.36812025069351895,0.1,0.36812025069351895,False
+final_n4_baseline,energy_joules,pow,pbft,"Mann-Whitney U, two-sided asymptotic, tie correction",100.0,0.00018267179110955002,1.0,0.0029227486577528003,True
+final_n4_baseline,energy_joules,pow,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",100.0,0.00018267179110955002,1.0,0.0029227486577528003,True
+final_n4_baseline,energy_joules,pbft,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",100.0,0.00018267179110955002,1.0,0.0029227486577528003,True
+final_n4_baseline,throughput_observation_tps,pow,pbft,"Mann-Whitney U, two-sided asymptotic, tie correction",0.0,0.00011067076459386204,-1.0,0.0018926874472707169,True
+final_n4_baseline,throughput_observation_tps,pow,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",6.0,0.0005658154863391857,-0.88,0.004526523890713486,True
+final_n4_baseline,throughput_observation_tps,pbft,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",10.0,0.0028272720911168077,-0.8,0.016901433769162474,True
+final_n4_baseline,completion_fraction,pow,pbft,"Mann-Whitney U, two-sided asymptotic, tie correction",0.0,0.00010514930262615094,-1.0,0.0018926874472707169,True
+final_n4_baseline,completion_fraction,pow,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",6.0,0.00028089631790265547,-0.88,0.0029227486577528003,True
+final_n4_baseline,completion_fraction,pbft,pos,"Mann-Whitney U, two-sided asymptotic, tie correction",10.0,0.0016843972800372293,-0.8,0.011790780960260604,True

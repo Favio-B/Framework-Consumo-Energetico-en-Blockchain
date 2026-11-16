@@ -1,0 +1,16 @@
+{"event": "ready", "node_id": 1, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":1,"tx_count":0,"ts":1792028332.268042,"node_id":1}
+[n1] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":2,"miner_id":1,"tx_count":0,"ts":1792028332.4649415,"node_id":1}
+[n1] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_received","index":3,"miner_id":0,"tx_count":0,"ts":1792028332.6316545,"node_id":1}
+{"event":"block_received","index":4,"miner_id":0,"tx_count":0,"ts":1792028332.8400726,"node_id":1}
+{"event":"block_received","index":5,"miner_id":0,"tx_count":0,"ts":1792028332.9061918,"node_id":1}
+{"event":"block_received","index":6,"miner_id":0,"tx_count":0,"ts":1792028333.4189985,"node_id":1}
+{"event":"block_mined","index":7,"miner_id":1,"tx_count":0,"ts":1792028333.9642463,"node_id":1}
+{"event":"block_mined","index":8,"miner_id":1,"tx_count":0,"ts":1792028334.5241582,"node_id":1}
+[n1] send_fail peer=3 err=gaierror(-2, 'Name or service not known')
+[n1] send_fail peer=3 err=gaierror(-2, 'Name or service not known')
+[n1] send_fail peer=2 err=TimeoutError('timed out')
+[n1] send_fail peer=2 err=TimeoutError('timed out')
+[n1] send_fail peer=2 err=TimeoutError('timed out')

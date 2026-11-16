@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}{{ name }} — Dashboard{% endblock %}
+{% block content %}
+  <h1>{{ name }}</h1>
+  <p><a href="{{ url_for('index') }}">← all experiments</a></p>
+
+  {% if failure_summary %}
+    <h2>Reliability</h2>
+    <p>Runs where <code>committed_by_quorum == 0</code> — consensus stalled.
+       These are <strong>excluded</strong> from the metric aggregates below.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Algorithm</th><th>Total</th><th>Failed</th><th>Successful</th><th>Failure rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for algo, d in failure_summary.items() | sort %}
+          <tr>
+            <td>{{ algo }}</td>
+            <td>{{ d.total_runs }}</td>
+            <td>{% if d.failed_runs %}<span class="skipped">{{ d.failed_runs }}</span>{% else %}{{ d.failed_runs }}{% endif %}</td>
+            <td>{{ d.successful_runs }}</td>
+            <td>{% if d.failure_rate %}<span class="skipped">{{ '%.1f%%' | format(d.failure_rate * 100) }}</span>{% else %}<span class="significant">0.0%</span>{% endif %}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+  {% if not results %}
+    <p class="empty">No metrics found for this experiment.</p>
+  {% endif %}
+
+  {% for label, result in results %}
+    <h2>{{ label }}</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Algorithm</th><th>n</th><th>mean</th><th>stdev</th>
+          <th>median</th><th>min</th><th>max</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for algo, g in result.groups.items() %}
+          <tr>
+            <td>{{ algo }}</td>
+            <td>{{ g.n }}</td>
+            <td>{{ '%.3f' | format(g.mean) }}</td>
+            <td>{{ '%.3f' | format(g.std) }}</td>
+            <td>{{ '%.3f' | format(g.median) }}</td>
+            <td>{{ '%.3f' | format(g.min) }}</td>
+            <td>{{ '%.3f' | format(g.max) }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if result.test_used == 'skipped' %}
+      <p class="skipped">Test skipped — {{ result.note }}</p>
+    {% else %}
+      <p>
+        <strong>{{ result.test_used }}</strong>:
+        statistic = {{ '%.3f' | format(result.statistic) }},
+        p =
+        {% if result.p_value is not none %}
+          {{ '%.4f' | format(result.p_value) }}
+        {% else %}—{% endif %}
+        →
+        {% if result.significant %}
+          <span class="significant">algorithms differ at α = {{ result.alpha }}</span>
+        {% else %}
+          <span class="not-significant">no significant difference at α = {{ result.alpha }}</span>
+        {% endif %}
+      </p>
+    {% endif %}
+
+    {% set plots = plot_paths.get(label) %}
+    {% if plots %}
+      <div class="plots">
+        {% for kind, path in plots.items() %}
+          <img src="{{ url_for('plot_file', name=name, filename=path.name) }}"
+               alt="{{ label }} — {{ kind }}">
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

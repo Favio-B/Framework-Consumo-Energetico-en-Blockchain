@@ -1,0 +1,37 @@
+{"event": "ready", "node_id": 0, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":0,"tx_count":0,"ts":1792028978.069323,"node_id":0}
+{"event":"block_mined","index":2,"miner_id":0,"tx_count":0,"ts":1792028978.0965965,"node_id":0}
+{"event":"block_mined","index":3,"miner_id":0,"tx_count":0,"ts":1792028978.1558979,"node_id":0}
+[n0] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":4,"miner_id":0,"tx_count":0,"ts":1792028978.3266428,"node_id":0}
+[n0] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_received","index":5,"miner_id":1,"tx_count":0,"ts":1792028979.263332,"node_id":0}
+{"event":"block_mined","index":6,"miner_id":0,"tx_count":0,"ts":1792028979.3193843,"node_id":0}
+{"event":"block_received","index":7,"miner_id":1,"tx_count":0,"ts":1792028979.5346057,"node_id":0}
+{"event":"block_mined","index":8,"miner_id":0,"tx_count":0,"ts":1792028980.0381844,"node_id":0}
+{"event":"block_received","index":9,"miner_id":1,"tx_count":0,"ts":1792028980.159112,"node_id":0}
+{"event":"block_mined","index":10,"miner_id":0,"tx_count":0,"ts":1792028980.186895,"node_id":0}
+{"event":"block_received","index":11,"miner_id":1,"tx_count":0,"ts":1792028980.343962,"node_id":0}
+{"event":"block_received","index":12,"miner_id":1,"tx_count":0,"ts":1792028980.6915128,"node_id":0}
+{"event":"block_received","index":13,"miner_id":1,"tx_count":0,"ts":1792028981.1577578,"node_id":0}
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+{"event":"block_mined","index":14,"miner_id":0,"tx_count":0,"ts":1792028981.5657935,"node_id":0}
+{"event":"block_mined","index":15,"miner_id":0,"tx_count":0,"ts":1792028981.6828763,"node_id":0}
+{"event":"block_mined","index":16,"miner_id":0,"tx_count":0,"ts":1792028981.7156475,"node_id":0}
+{"event":"block_mined","index":17,"miner_id":0,"tx_count":0,"ts":1792028981.989718,"node_id":0}
+{"event":"block_mined","index":18,"miner_id":0,"tx_count":0,"ts":1792028982.5188715,"node_id":0}
+{"event":"block_mined","index":19,"miner_id":0,"tx_count":0,"ts":1792028982.5366046,"node_id":0}
+{"event":"block_mined","index":20,"miner_id":0,"tx_count":0,"ts":1792028982.8201742,"node_id":0}
+{"event":"block_mined","index":21,"miner_id":0,"tx_count":0,"ts":1792028983.1174142,"node_id":0}
+{"event":"block_mined","index":22,"miner_id":0,"tx_count":0,"ts":1792028983.3388417,"node_id":0}
+{"event":"block_mined","index":23,"miner_id":0,"tx_count":0,"ts":1792028983.5842974,"node_id":0}
+{"event":"block_mined","index":24,"miner_id":0,"tx_count":0,"ts":1792028983.9377387,"node_id":0}
+{"event":"block_mined","index":25,"miner_id":0,"tx_count":0,"ts":1792028983.953796,"node_id":0}
+{"event":"block_mined","index":26,"miner_id":0,"tx_count":0,"ts":1792028984.2189057,"node_id":0}
+{"event":"block_mined","index":27,"miner_id":0,"tx_count":0,"ts":1792028984.3930674,"node_id":0}
+{"event":"block_mined","index":28,"miner_id":0,"tx_count":0,"ts":1792028985.6694348,"node_id":0}
+{"event":"block_mined","index":29,"miner_id":0,"tx_count":0,"ts":1792028985.9505477,"node_id":0}
+{"event":"block_mined","index":30,"miner_id":0,"tx_count":0,"ts":1792028986.034858,"node_id":0}
+{"event":"block_mined","index":31,"miner_id":0,"tx_count":0,"ts":1792028986.8145764,"node_id":0}
+{"event":"block_mined","index":32,"miner_id":0,"tx_count":19,"ts":1792028988.7358377,"node_id":0}

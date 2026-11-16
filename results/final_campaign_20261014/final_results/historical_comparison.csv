@@ -1,0 +1,16 @@
+﻿dataset,algorithm,n,zero,partial,full,committed_total,energy_mean_all_J,pooled_J_tx,network,causal_before_after
+baseline_3nodes,pow,15,3,12,0,503,59.51707981508038,1.7748632151614427,historical effective rules not recorded,False
+baseline_3nodes,pbft,15,0,0,15,1500,8.939696241506585,0.08939696241506584,historical effective rules not recorded,False
+baseline_3nodes,pos,15,2,0,13,1300,2.9837535796753154,0.03442792591933056,historical effective rules not recorded,False
+n4_baseline,pow,10,1,9,0,149,77.58548293579834,5.207079391664318,historical effective rules not recorded,False
+n4_baseline,pbft,10,0,8,2,979,15.211696665416543,0.15537994550987275,historical effective rules not recorded,False
+n4_baseline,pos,10,2,0,8,800,5.4462034339274075,0.0680775429240926,historical effective rules not recorded,False
+n4_baseline_v2,pow,10,4,6,0,154,81.55812121681888,5.2959818971960315,historical effective rules not recorded,False
+n4_baseline_v2,pbft,8,0,8,0,778,15.37979227382582,0.15814696425527835,historical effective rules not recorded,False
+n4_baseline_v2,pos,0,0,0,0,0,,,historical effective rules not recorded,False
+final_n3_baseline,pow,10,2,7,1,342,46.484479118786155,1.3591952958709403,"verified 50 ms, jitter0, 10 Mbps",False
+final_n3_baseline,pbft,10,0,0,10,1000,4.922070555984126,0.04922070555984125,"verified 50 ms, jitter0, 10 Mbps",False
+final_n3_baseline,pos,10,1,0,9,900,2.075894501491703,0.023065494461018923,"verified 50 ms, jitter0, 10 Mbps",False
+final_n4_baseline,pow,10,8,2,0,23,64.35362393549225,27.979836493692282,"verified 50 ms, jitter0, 10 Mbps",False
+final_n4_baseline,pbft,10,0,10,0,928,9.128607237014966,0.0983686124678337,"verified 50 ms, jitter0, 10 Mbps",False
+final_n4_baseline,pos,10,1,0,9,900,3.6583233864454328,0.04064803762717148,"verified 50 ms, jitter0, 10 Mbps",False

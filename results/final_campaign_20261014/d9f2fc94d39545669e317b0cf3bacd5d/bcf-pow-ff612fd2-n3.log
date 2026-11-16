@@ -1,0 +1,27 @@
+{"event": "ready", "node_id": 3, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":3,"tx_count":0,"ts":1792028163.3084943,"node_id":3}
+{"event":"block_mined","index":2,"miner_id":3,"tx_count":0,"ts":1792028163.3308904,"node_id":3}
+{"event":"block_mined","index":3,"miner_id":3,"tx_count":0,"ts":1792028163.467636,"node_id":3}
+{"event":"block_mined","index":4,"miner_id":3,"tx_count":0,"ts":1792028163.8346558,"node_id":3}
+{"event":"block_mined","index":5,"miner_id":3,"tx_count":0,"ts":1792028163.938365,"node_id":3}
+{"event":"block_mined","index":6,"miner_id":3,"tx_count":0,"ts":1792028164.2898436,"node_id":3}
+{"event":"block_mined","index":7,"miner_id":3,"tx_count":0,"ts":1792028164.320362,"node_id":3}
+{"event":"block_mined","index":8,"miner_id":3,"tx_count":0,"ts":1792028164.6085343,"node_id":3}
+{"event":"block_mined","index":9,"miner_id":3,"tx_count":0,"ts":1792028164.9395816,"node_id":3}
+{"event":"block_mined","index":10,"miner_id":3,"tx_count":0,"ts":1792028165.7901917,"node_id":3}
+{"event":"block_mined","index":11,"miner_id":3,"tx_count":0,"ts":1792028166.0385442,"node_id":3}
+{"event":"block_mined","index":12,"miner_id":3,"tx_count":0,"ts":1792028166.9049075,"node_id":3}
+{"event":"block_mined","index":13,"miner_id":3,"tx_count":0,"ts":1792028166.9536965,"node_id":3}
+{"event":"block_mined","index":14,"miner_id":3,"tx_count":0,"ts":1792028167.5342228,"node_id":3}
+{"event":"block_mined","index":15,"miner_id":3,"tx_count":0,"ts":1792028167.9352973,"node_id":3}
+{"event":"block_mined","index":16,"miner_id":3,"tx_count":0,"ts":1792028170.8929763,"node_id":3}
+{"event":"block_mined","index":17,"miner_id":3,"tx_count":0,"ts":1792028171.544249,"node_id":3}
+{"event":"block_mined","index":18,"miner_id":3,"tx_count":0,"ts":1792028172.0833006,"node_id":3}
+{"event":"block_mined","index":19,"miner_id":3,"tx_count":0,"ts":1792028173.0358984,"node_id":3}
+{"event":"block_mined","index":20,"miner_id":3,"tx_count":0,"ts":1792028173.3491924,"node_id":3}
+{"event":"block_mined","index":21,"miner_id":3,"tx_count":0,"ts":1792028173.4459362,"node_id":3}
+{"event":"block_mined","index":22,"miner_id":3,"tx_count":0,"ts":1792028173.5803983,"node_id":3}
+{"event":"block_mined","index":23,"miner_id":3,"tx_count":0,"ts":1792028173.8464081,"node_id":3}
+{"event":"block_mined","index":24,"miner_id":3,"tx_count":0,"ts":1792028174.7327073,"node_id":3}
+{"event":"block_mined","index":25,"miner_id":3,"tx_count":0,"ts":1792028175.9358625,"node_id":3}
+{"event":"block_mined","index":26,"miner_id":3,"tx_count":20,"ts":1792028176.4032488,"node_id":3}

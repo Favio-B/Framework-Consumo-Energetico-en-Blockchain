@@ -1,0 +1,436 @@
+{
+  "algorithm": "pow",
+  "artefacts_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\4dc98355aca44a2c88286547640633e3",
+  "bandwidth_kbps_applied": 10000,
+  "bytes_per_tx": {
+    "rx_per_tx": 24415.105263157893,
+    "total_per_tx": 48328.10526315789,
+    "tx_per_tx": 23913.0
+  },
+  "committed_by_quorum": 19,
+  "completion_fraction": 0.19,
+  "completion_status": "partial",
+  "energy_joules": 44.96435737218524,
+  "experiment_name": "final_n3_baseline",
+  "finality_ms": {
+    "max": 3923.15411567688,
+    "mean": 3733.927049134907,
+    "n": 19,
+    "p50": 3738.2586002349854,
+    "p95": 3902.8754234313965,
+    "p99": 3923.15411567688
+  },
+  "latency_ms": {
+    "max": 3923.15411567688,
+    "mean": 3733.927049134907,
+    "n": 19,
+    "p50": 3738.2586002349854,
+    "p95": 3902.8754234313965,
+    "p99": 3923.15411567688
+  },
+  "latency_ms_applied": 50,
+  "module_native": {
+    "algorithm": "pow",
+    "blocks_mined_per_node": {
+      "0": 6,
+      "1": 25,
+      "2": 17
+    },
+    "commits_by_request": {
+      "cdb8cccd-0": [
+        [
+          1,
+          1792030063.6049986
+        ]
+      ],
+      "cdb8cccd-1": [
+        [
+          1,
+          1792030063.6050563
+        ]
+      ],
+      "cdb8cccd-10": [
+        [
+          1,
+          1792030063.6053398
+        ]
+      ],
+      "cdb8cccd-11": [
+        [
+          1,
+          1792030063.6053872
+        ]
+      ],
+      "cdb8cccd-12": [
+        [
+          1,
+          1792030063.605413
+        ]
+      ],
+      "cdb8cccd-13": [
+        [
+          1,
+          1792030063.6054707
+        ]
+      ],
+      "cdb8cccd-14": [
+        [
+          1,
+          1792030063.6054454
+        ]
+      ],
+      "cdb8cccd-15": [
+        [
+          1,
+          1792030063.60549
+        ]
+      ],
+      "cdb8cccd-16": [
+        [
+          1,
+          1792030063.605506
+        ]
+      ],
+      "cdb8cccd-19": [
+        [
+          1,
+          1792030063.6055217
+        ]
+      ],
+      "cdb8cccd-2": [
+        [
+          1,
+          1792030063.605079
+        ]
+      ],
+      "cdb8cccd-20": [
+        [
+          1,
+          1792030063.605552
+        ]
+      ],
+      "cdb8cccd-3": [
+        [
+          1,
+          1792030063.6051154
+        ]
+      ],
+      "cdb8cccd-4": [
+        [
+          1,
+          1792030063.605157
+        ]
+      ],
+      "cdb8cccd-5": [
+        [
+          1,
+          1792030063.605198
+        ]
+      ],
+      "cdb8cccd-6": [
+        [
+          1,
+          1792030063.6052384
+        ]
+      ],
+      "cdb8cccd-7": [
+        [
+          1,
+          1792030063.6052656
+        ]
+      ],
+      "cdb8cccd-8": [
+        [
+          1,
+          1792030063.6053138
+        ]
+      ],
+      "cdb8cccd-9": [
+        [
+          1,
+          1792030063.6053565
+        ]
+      ]
+    },
+    "entry_node_id": 0,
+    "node_count": 3,
+    "per_node": {
+      "0": {
+        "committed_count": 0,
+        "mined_blocks": 6
+      },
+      "1": {
+        "committed_count": 19,
+        "mined_blocks": 25
+      },
+      "2": {
+        "committed_count": 0,
+        "mined_blocks": 17
+      }
+    },
+    "run_id": "cdb8cccd",
+    "submits": {
+      "cdb8cccd-0": 1792030059.6818445,
+      "cdb8cccd-1": 1792030059.7021809,
+      "cdb8cccd-10": 1792030059.8879132,
+      "cdb8cccd-11": 1792030059.9084024,
+      "cdb8cccd-12": 1792030059.9290085,
+      "cdb8cccd-13": 1792030059.9494224,
+      "cdb8cccd-14": 1792030059.970296,
+      "cdb8cccd-15": 1792030059.9908986,
+      "cdb8cccd-16": 1792030060.011199,
+      "cdb8cccd-17": 1792030060.0318196,
+      "cdb8cccd-18": 1792030060.0523765,
+      "cdb8cccd-19": 1792030060.073095,
+      "cdb8cccd-2": 1792030059.722471,
+      "cdb8cccd-20": 1792030060.0937269,
+      "cdb8cccd-21": 1792030060.1140356,
+      "cdb8cccd-22": 1792030060.1343682,
+      "cdb8cccd-23": 1792030060.1550655,
+      "cdb8cccd-24": 1792030060.1758418,
+      "cdb8cccd-25": 1792030060.1962423,
+      "cdb8cccd-26": 1792030060.216547,
+      "cdb8cccd-27": 1792030060.2370064,
+      "cdb8cccd-28": 1792030060.2572887,
+      "cdb8cccd-29": 1792030060.2780366,
+      "cdb8cccd-3": 1792030059.7432468,
+      "cdb8cccd-30": 1792030060.2986982,
+      "cdb8cccd-31": 1792030060.3191128,
+      "cdb8cccd-32": 1792030060.339984,
+      "cdb8cccd-33": 1792030060.360661,
+      "cdb8cccd-34": 1792030060.381003,
+      "cdb8cccd-35": 1792030060.4015331,
+      "cdb8cccd-36": 1792030060.422216,
+      "cdb8cccd-37": 1792030060.442485,
+      "cdb8cccd-38": 1792030060.4629436,
+      "cdb8cccd-39": 1792030060.4837012,
+      "cdb8cccd-4": 1792030059.7638469,
+      "cdb8cccd-40": 1792030060.5042565,
+      "cdb8cccd-41": 1792030060.524705,
+      "cdb8cccd-42": 1792030060.5454845,
+      "cdb8cccd-43": 1792030060.5660498,
+      "cdb8cccd-44": 1792030060.5865674,
+      "cdb8cccd-45": 1792030060.6073172,
+      "cdb8cccd-46": 1792030060.6277058,
+      "cdb8cccd-47": 1792030060.6481395,
+      "cdb8cccd-48": 1792030060.6687117,
+      "cdb8cccd-49": 1792030060.6894517,
+      "cdb8cccd-5": 1792030059.784435,
+      "cdb8cccd-50": 1792030060.7101476,
+      "cdb8cccd-51": 1792030060.730525,
+      "cdb8cccd-52": 1792030060.7509022,
+      "cdb8cccd-53": 1792030060.7713344,
+      "cdb8cccd-54": 1792030060.791892,
+      "cdb8cccd-55": 1792030060.812363,
+      "cdb8cccd-56": 1792030060.832845,
+      "cdb8cccd-57": 1792030060.8535526,
+      "cdb8cccd-58": 1792030060.874151,
+      "cdb8cccd-59": 1792030060.89454,
+      "cdb8cccd-6": 1792030059.8051088,
+      "cdb8cccd-60": 1792030060.915593,
+      "cdb8cccd-61": 1792030060.9365058,
+      "cdb8cccd-62": 1792030060.9574847,
+      "cdb8cccd-63": 1792030060.9783936,
+      "cdb8cccd-64": 1792030060.998663,
+      "cdb8cccd-65": 1792030061.0194395,
+      "cdb8cccd-66": 1792030061.0401866,
+      "cdb8cccd-67": 1792030061.0604415,
+      "cdb8cccd-68": 1792030061.080943,
+      "cdb8cccd-69": 1792030061.102145,
+      "cdb8cccd-7": 1792030059.825784,
+      "cdb8cccd-70": 1792030061.122901,
+      "cdb8cccd-71": 1792030061.1434202,
+      "cdb8cccd-72": 1792030061.1638682,
+      "cdb8cccd-73": 1792030061.1841624,
+      "cdb8cccd-74": 1792030061.2045088,
+      "cdb8cccd-75": 1792030061.2248008,
+      "cdb8cccd-76": 1792030061.245101,
+      "cdb8cccd-77": 1792030061.2655776,
+      "cdb8cccd-78": 1792030061.2862427,
+      "cdb8cccd-79": 1792030061.3068328,
+      "cdb8cccd-8": 1792030059.8463123,
+      "cdb8cccd-80": 1792030061.3273792,
+      "cdb8cccd-81": 1792030061.348111,
+      "cdb8cccd-82": 1792030061.3692882,
+      "cdb8cccd-83": 1792030061.3900044,
+      "cdb8cccd-84": 1792030061.4107854,
+      "cdb8cccd-85": 1792030061.4314835,
+      "cdb8cccd-86": 1792030061.4521298,
+      "cdb8cccd-87": 1792030061.472623,
+      "cdb8cccd-88": 1792030061.4933004,
+      "cdb8cccd-89": 1792030061.5141156,
+      "cdb8cccd-9": 1792030059.8670979,
+      "cdb8cccd-90": 1792030061.5348723,
+      "cdb8cccd-91": 1792030061.5554233,
+      "cdb8cccd-92": 1792030061.575855,
+      "cdb8cccd-93": 1792030061.596328,
+      "cdb8cccd-94": 1792030061.6168594,
+      "cdb8cccd-95": 1792030061.6376774,
+      "cdb8cccd-96": 1792030061.658009,
+      "cdb8cccd-97": 1792030061.6785357,
+      "cdb8cccd-98": 1792030061.699289,
+      "cdb8cccd-99": 1792030061.7201245
+    }
+  },
+  "network_totals": {
+    "per_container": {
+      "bcf-pow-cdb8cccd-n0": {
+        "rx_bytes": 165317,
+        "tx_bytes": 161753
+      },
+      "bcf-pow-cdb8cccd-n1": {
+        "rx_bytes": 147072,
+        "tx_bytes": 152438
+      },
+      "bcf-pow-cdb8cccd-n2": {
+        "rx_bytes": 151498,
+        "tx_bytes": 140156
+      }
+    },
+    "total_bytes": 918234,
+    "total_rx_bytes": 463887,
+    "total_tx_bytes": 454347
+  },
+  "node_count": 3,
+  "packet_loss_pct_applied": 0.0,
+  "provenance": {
+    "cpu_sampling": "Docker stats streaming, approximately 1 Hz",
+    "energy_estimator": "sum(cpu_avg/100/num_cpus*TDP*sample_duration)",
+    "images": {
+      "bcf-pow-cdb8cccd-n0": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb",
+      "bcf-pow-cdb8cccd-n1": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb",
+      "bcf-pow-cdb8cccd-n2": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+    },
+    "methodology": "fixed-post-submit-window-v3",
+    "network_effective": {
+      "bcf-pow-cdb8cccd-n0": [
+        {
+          "handle": "813e:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 1876309996562817577
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pow-cdb8cccd-n1": [
+        {
+          "handle": "813d:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 6283748511186807250
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pow-cdb8cccd-n2": [
+        {
+          "handle": "813c:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 1249628399348313482
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ]
+    },
+    "num_cpus_energy": 22,
+    "observation_end_unix": 1792030066.7414405,
+    "observation_start_unix": 1792030059.6810236,
+    "post_submit_settle_seconds": 5.0,
+    "run_timeout_role": "network-rule lifetime; not a completion timeout",
+    "sampling_start_unix": {
+      "bcf-pow-cdb8cccd-n0": 1792030058.5374331,
+      "bcf-pow-cdb8cccd-n1": 1792030058.5398395,
+      "bcf-pow-cdb8cccd-n2": 1792030058.541806
+    }
+  },
+  "quorum": 1,
+  "repetition": 9,
+  "resource_summary": {
+    "bcf-pow-cdb8cccd-n0": {
+      "cpu_percent_avg": 90.87389643010611,
+      "cpu_percent_peak": 107.0163,
+      "duration_s": 8.058290004730225,
+      "memory_mb_avg": 20.01953125,
+      "memory_mb_peak": 21.9140625,
+      "rx_bytes": 165317,
+      "sample_count": 9,
+      "tx_bytes": 161753
+    },
+    "bcf-pow-cdb8cccd-n1": {
+      "cpu_percent_avg": 90.93523573080097,
+      "cpu_percent_peak": 107.81618961625281,
+      "duration_s": 8.059159278869629,
+      "memory_mb_avg": 20.461805555555557,
+      "memory_mb_peak": 23.7265625,
+      "rx_bytes": 147072,
+      "sample_count": 9,
+      "tx_bytes": 152438
+    },
+    "bcf-pow-cdb8cccd-n2": {
+      "cpu_percent_avg": 90.97150180234559,
+      "cpu_percent_peak": 108.28103884372177,
+      "duration_s": 8.058652400970459,
+      "memory_mb_avg": 19.52126736111111,
+      "memory_mb_peak": 21.83203125,
+      "rx_bytes": 151498,
+      "sample_count": 9,
+      "tx_bytes": 140156
+    }
+  },
+  "run_id": "4dc98355aca44a2c88286547640633e3",
+  "started_at": "2026-10-15T02:07:28.989561+00:00",
+  "submit_window_s": 7.060415983200073,
+  "submitted": 100,
+  "tdp_watts": 45,
+  "throughput_observation_tps": 2.6910592065418735,
+  "throughput_tps": 4.842358935183593,
+  "tx_count": 100,
+  "tx_rate_tps": 50
+}

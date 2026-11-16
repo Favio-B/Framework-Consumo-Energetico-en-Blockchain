@@ -1,0 +1,30 @@
+# Self-contained image for the read-only Flask dashboard.
+# Bundles only the layers the dashboard touches at runtime: storage/ (SqliteRepository),
+# analysis/ (analyse_experiment + plotting), and dashboard/ (Flask app + templates).
+# The orchestrator and consensus modules stay out of this image — the dashboard
+# never launches containers, just reads results.
+FROM python:3.13-slim
+
+WORKDIR /app
+
+# Install only the deps the dashboard / analysis layers need at runtime.
+# Mirrors requirements.txt selectively; if you bump versions there, mirror here.
+RUN pip install --no-cache-dir \
+    "Flask>=3.0,<4" "Jinja2>=3.1,<4" "PyYAML>=6.0,<7" \
+    "numpy>=2.0,<3" "scipy>=1.14,<2" \
+    "matplotlib>=3.9,<4" "seaborn>=0.13,<1"
+
+COPY storage/    ./storage/
+COPY analysis/   ./analysis/
+COPY dashboard/  ./dashboard/
+COPY conftest.py .
+
+# Default bind for container use — overridable via env (see dashboard/app.py docstring).
+ENV BCF_DASHBOARD_HOST=0.0.0.0 \
+    BCF_DASHBOARD_PORT=5000 \
+    BCF_DB_PATH=/app/results/final_campaign_20261014/experiments.db \
+    BCF_DASHBOARD_RESULTS_DIR=/app/results/dashboard_analysis
+
+EXPOSE 5000
+
+CMD ["python", "-m", "dashboard.app"]

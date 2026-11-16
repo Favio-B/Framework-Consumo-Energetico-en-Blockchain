@@ -1,0 +1,21 @@
+{"event": "ready", "node_id": 2, "port": 5000, "difficulty_bits": 18}
+{"event":"block_mined","index":1,"miner_id":2,"tx_count":0,"ts":1792028141.7674694,"node_id":2}
+{"event":"block_received","index":2,"miner_id":0,"tx_count":0,"ts":1792028142.0788627,"node_id":2}
+{"event":"block_mined","index":3,"miner_id":2,"tx_count":0,"ts":1792028142.278067,"node_id":2}
+{"event":"block_mined","index":4,"miner_id":2,"tx_count":0,"ts":1792028143.5136943,"node_id":2}
+{"event":"block_received","index":5,"miner_id":0,"tx_count":0,"ts":1792028143.9969254,"node_id":2}
+{"event":"block_mined","index":6,"miner_id":2,"tx_count":0,"ts":1792028146.5029047,"node_id":2}
+{"event":"block_received","index":6,"miner_id":1,"tx_count":0,"ts":1792028146.5725396,"node_id":2}
+{"event":"block_mined","index":7,"miner_id":2,"tx_count":0,"ts":1792028147.4206524,"node_id":2}
+{"event":"block_received","index":7,"miner_id":1,"tx_count":0,"ts":1792028147.807383,"node_id":2}
+{"event":"block_received","index":8,"miner_id":0,"tx_count":0,"ts":1792028148.3250628,"node_id":2}
+{"event":"block_received","index":9,"miner_id":1,"tx_count":0,"ts":1792028148.6634772,"node_id":2}
+{"event":"block_mined","index":10,"miner_id":2,"tx_count":0,"ts":1792028148.7589974,"node_id":2}
+{"event":"block_received","index":10,"miner_id":1,"tx_count":0,"ts":1792028148.807881,"node_id":2}
+{"event":"block_received","index":11,"miner_id":0,"tx_count":0,"ts":1792028149.0049207,"node_id":2}
+{"event":"block_received","index":12,"miner_id":1,"tx_count":0,"ts":1792028149.7142365,"node_id":2}
+{"event":"block_received","index":13,"miner_id":0,"tx_count":0,"ts":1792028150.2988956,"node_id":2}
+{"event":"block_received","index":14,"miner_id":0,"tx_count":0,"ts":1792028150.7249124,"node_id":2}
+{"event":"block_received","index":15,"miner_id":1,"tx_count":0,"ts":1792028151.123866,"node_id":2}
+{"event":"block_received","index":16,"miner_id":1,"tx_count":0,"ts":1792028153.0835326,"node_id":2}
+{"event":"block_received","index":17,"miner_id":1,"tx_count":20,"ts":1792028155.4631617,"node_id":2}

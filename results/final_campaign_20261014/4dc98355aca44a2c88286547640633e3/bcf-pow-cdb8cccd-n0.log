@@ -1,0 +1,14 @@
+{"event": "ready", "node_id": 0, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":0,"tx_count":0,"ts":1792030049.6854882,"node_id":0}
+{"event":"block_mined","index":2,"miner_id":0,"tx_count":0,"ts":1792030049.6928496,"node_id":0}
+{"event":"block_mined","index":3,"miner_id":0,"tx_count":0,"ts":1792030049.794295,"node_id":0}
+{"event":"block_mined","index":4,"miner_id":0,"tx_count":0,"ts":1792030050.1451752,"node_id":0}
+{"event":"block_mined","index":5,"miner_id":0,"tx_count":0,"ts":1792030050.6781414,"node_id":0}
+{"event":"block_mined","index":6,"miner_id":0,"tx_count":0,"ts":1792030050.75637,"node_id":0}
+[n0] send_fail peer=1 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=1 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=1 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')

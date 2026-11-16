@@ -1,0 +1,22 @@
+{
+  "name": "consensus-framework-site",
+  "private": true,
+  "description": "Sitio estático (GitHub Pages) con los resultados de la campaña final",
+  "scripts": {
+    "build:data": "python ../scripts/build_site_data.py",
+    "build:css": "tailwindcss -c tailwind.config.js -i src/styles.css -o assets/css/site.css --minify",
+    "build:js": "esbuild src/main.js --bundle --format=esm --minify --target=es2020 --outfile=assets/js/app.js",
+    "build:vendor": "node scripts/copy-vendor.mjs",
+    "build": "npm run build:vendor && npm run build:css && npm run build:js",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "bootstrap-icons": "1.13.2",
+    "echarts": "5.6.0",
+    "echarts-gl": "2.0.9",
+    "esbuild": "0.25.10",
+    "gsap": "3.15.1",
+    "tailwindcss": "3.4.19",
+    "three": "0.187.0"
+  }
+}

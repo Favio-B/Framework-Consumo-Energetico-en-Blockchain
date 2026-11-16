@@ -1,0 +1,65 @@
+[
+  {
+    "experiment": "final_n3_baseline",
+    "algorithm": "pbft",
+    "trials_all": 10,
+    "conditional_latency_n": 10,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "algorithm": "pos",
+    "trials_all": 10,
+    "conditional_latency_n": 9,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "algorithm": "pow",
+    "trials_all": 10,
+    "conditional_latency_n": 8,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "algorithm": "pbft",
+    "trials_all": 10,
+    "conditional_latency_n": 10,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "algorithm": "pos",
+    "trials_all": 10,
+    "conditional_latency_n": 9,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "algorithm": "pow",
+    "trials_all": 10,
+    "conditional_latency_n": 2,
+    "conditional_inference_min5_met": false
+  },
+  {
+    "experiment": "final_pow_diff14",
+    "algorithm": "pow",
+    "trials_all": 10,
+    "conditional_latency_n": 10,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_pow_diff18",
+    "algorithm": "pow",
+    "trials_all": 10,
+    "conditional_latency_n": 5,
+    "conditional_inference_min5_met": true
+  },
+  {
+    "experiment": "final_pow_diff20",
+    "algorithm": "pow",
+    "trials_all": 10,
+    "conditional_latency_n": 0,
+    "conditional_inference_min5_met": false
+  }
+]

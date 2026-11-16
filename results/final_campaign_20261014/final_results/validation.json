@@ -1,0 +1,10 @@
+{
+  "registered_trials": 90,
+  "expected_trials": 90,
+  "groups": 9,
+  "sqlite_integrity": "ok",
+  "foreign_key_violations": [],
+  "issues": [],
+  "historical_db_unchanged": true,
+  "all_expected_identities_present": true
+}

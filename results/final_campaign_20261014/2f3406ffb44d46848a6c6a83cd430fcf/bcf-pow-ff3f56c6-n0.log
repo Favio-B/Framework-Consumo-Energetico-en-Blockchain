@@ -1,0 +1,23 @@
+{"event": "ready", "node_id": 0, "port": 5000, "difficulty_bits": 14}
+{"event":"block_mined","index":1,"miner_id":0,"tx_count":0,"ts":1792029767.460134,"node_id":0}
+{"event":"block_mined","index":2,"miner_id":0,"tx_count":0,"ts":1792029767.4699624,"node_id":0}
+{"event":"block_mined","index":3,"miner_id":0,"tx_count":0,"ts":1792029767.5703592,"node_id":0}
+[n0] send_fail peer=1 err=ConnectionRefusedError(111, 'Connection refused')
+[n0] send_fail peer=1 err=ConnectionRefusedError(111, 'Connection refused')
+[n0] send_fail peer=1 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":4,"miner_id":0,"tx_count":0,"ts":1792029767.7438617,"node_id":0}
+[n0] send_fail peer=1 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":5,"miner_id":0,"tx_count":0,"ts":1792029767.8556092,"node_id":0}
+{"event":"block_mined","index":6,"miner_id":0,"tx_count":0,"ts":1792029767.865371,"node_id":0}
+{"event":"block_mined","index":7,"miner_id":0,"tx_count":0,"ts":1792029768.0604527,"node_id":0}
+[n0] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":8,"miner_id":0,"tx_count":0,"ts":1792029768.5160203,"node_id":0}
+{"event":"block_mined","index":9,"miner_id":0,"tx_count":0,"ts":1792029768.5977888,"node_id":0}
+{"event":"block_mined","index":10,"miner_id":0,"tx_count":0,"ts":1792029768.6655135,"node_id":0}
+{"event":"block_mined","index":11,"miner_id":0,"tx_count":0,"ts":1792029768.867219,"node_id":0}
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')
+[n0] send_fail peer=2 err=gaierror(-2, 'Name or service not known')

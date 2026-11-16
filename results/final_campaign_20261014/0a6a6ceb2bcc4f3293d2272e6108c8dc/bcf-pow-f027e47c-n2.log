@@ -1,0 +1,22 @@
+{"event": "ready", "node_id": 2, "port": 5000, "difficulty_bits": 16}
+{"event":"block_mined","index":1,"miner_id":2,"tx_count":0,"ts":1792028978.8387818,"node_id":2}
+{"event":"block_mined","index":2,"miner_id":2,"tx_count":0,"ts":1792028979.2177725,"node_id":2}
+{"event":"block_mined","index":3,"miner_id":2,"tx_count":0,"ts":1792028979.7972822,"node_id":2}
+{"event":"block_mined","index":4,"miner_id":2,"tx_count":0,"ts":1792028980.140004,"node_id":2}
+{"event":"block_mined","index":5,"miner_id":2,"tx_count":0,"ts":1792028980.186298,"node_id":2}
+{"event":"block_mined","index":6,"miner_id":2,"tx_count":0,"ts":1792028981.6474924,"node_id":2}
+{"event":"block_mined","index":7,"miner_id":2,"tx_count":0,"ts":1792028982.3394754,"node_id":2}
+{"event":"block_mined","index":8,"miner_id":2,"tx_count":0,"ts":1792028982.908512,"node_id":2}
+{"event":"block_mined","index":9,"miner_id":2,"tx_count":0,"ts":1792028983.6053529,"node_id":2}
+{"event":"block_mined","index":10,"miner_id":2,"tx_count":0,"ts":1792028984.022046,"node_id":2}
+{"event":"block_mined","index":11,"miner_id":2,"tx_count":0,"ts":1792028984.185929,"node_id":2}
+{"event":"block_mined","index":12,"miner_id":2,"tx_count":0,"ts":1792028984.2685692,"node_id":2}
+{"event":"block_mined","index":13,"miner_id":2,"tx_count":0,"ts":1792028984.484567,"node_id":2}
+{"event":"block_mined","index":14,"miner_id":2,"tx_count":0,"ts":1792028984.5860841,"node_id":2}
+{"event":"block_mined","index":15,"miner_id":2,"tx_count":0,"ts":1792028984.6352603,"node_id":2}
+{"event":"block_mined","index":16,"miner_id":2,"tx_count":0,"ts":1792028984.8200908,"node_id":2}
+{"event":"block_mined","index":17,"miner_id":2,"tx_count":0,"ts":1792028984.9245837,"node_id":2}
+{"event":"block_mined","index":18,"miner_id":2,"tx_count":0,"ts":1792028985.8061788,"node_id":2}
+{"event":"block_mined","index":19,"miner_id":2,"tx_count":0,"ts":1792028985.904461,"node_id":2}
+{"event":"block_mined","index":20,"miner_id":2,"tx_count":0,"ts":1792028987.6513014,"node_id":2}
+{"event":"block_mined","index":21,"miner_id":2,"tx_count":20,"ts":1792028987.6775231,"node_id":2}

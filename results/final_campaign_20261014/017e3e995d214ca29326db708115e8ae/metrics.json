@@ -1,0 +1,321 @@
+{
+  "algorithm": "pow",
+  "artefacts_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\017e3e995d214ca29326db708115e8ae",
+  "bandwidth_kbps_applied": 10000,
+  "bytes_per_tx": {
+    "rx_per_tx": 0.0,
+    "total_per_tx": 0.0,
+    "tx_per_tx": 0.0
+  },
+  "committed_by_quorum": 0,
+  "completion_fraction": 0.0,
+  "completion_status": "zero",
+  "energy_joules": 47.19013567847352,
+  "experiment_name": "final_pow_diff20",
+  "finality_ms": {
+    "max": 0.0,
+    "mean": 0.0,
+    "n": 0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0
+  },
+  "latency_ms": {
+    "max": 0.0,
+    "mean": 0.0,
+    "n": 0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0
+  },
+  "latency_ms_applied": 50,
+  "module_native": {
+    "algorithm": "pow",
+    "blocks_mined_per_node": {
+      "0": 1,
+      "1": 4,
+      "2": 0
+    },
+    "commits_by_request": {},
+    "entry_node_id": 0,
+    "node_count": 3,
+    "per_node": {
+      "0": {
+        "committed_count": 0,
+        "mined_blocks": 1
+      },
+      "1": {
+        "committed_count": 0,
+        "mined_blocks": 4
+      },
+      "2": {
+        "committed_count": 0,
+        "mined_blocks": 0
+      }
+    },
+    "run_id": "cd5e401e",
+    "submits": {
+      "cd5e401e-0": 1792029006.9694848,
+      "cd5e401e-1": 1792029006.9903743,
+      "cd5e401e-10": 1792029007.176356,
+      "cd5e401e-11": 1792029007.1972647,
+      "cd5e401e-12": 1792029007.2179484,
+      "cd5e401e-13": 1792029007.2388406,
+      "cd5e401e-14": 1792029007.259981,
+      "cd5e401e-15": 1792029007.2806892,
+      "cd5e401e-16": 1792029007.3013434,
+      "cd5e401e-17": 1792029007.3217056,
+      "cd5e401e-18": 1792029007.342052,
+      "cd5e401e-19": 1792029007.3628461,
+      "cd5e401e-2": 1792029007.0109792,
+      "cd5e401e-20": 1792029007.3838243,
+      "cd5e401e-21": 1792029007.4046104,
+      "cd5e401e-22": 1792029007.4255033,
+      "cd5e401e-23": 1792029007.446066,
+      "cd5e401e-24": 1792029007.4667785,
+      "cd5e401e-25": 1792029007.487368,
+      "cd5e401e-26": 1792029007.5082448,
+      "cd5e401e-27": 1792029007.5286844,
+      "cd5e401e-28": 1792029007.5495555,
+      "cd5e401e-29": 1792029007.570411,
+      "cd5e401e-3": 1792029007.0317965,
+      "cd5e401e-30": 1792029007.5909135,
+      "cd5e401e-31": 1792029007.6116276,
+      "cd5e401e-32": 1792029007.6321294,
+      "cd5e401e-33": 1792029007.6525455,
+      "cd5e401e-34": 1792029007.6728969,
+      "cd5e401e-35": 1792029007.6937766,
+      "cd5e401e-36": 1792029007.7142284,
+      "cd5e401e-37": 1792029007.7350278,
+      "cd5e401e-38": 1792029007.7558208,
+      "cd5e401e-39": 1792029007.776705,
+      "cd5e401e-4": 1792029007.052653,
+      "cd5e401e-40": 1792029007.7971368,
+      "cd5e401e-41": 1792029007.8178365,
+      "cd5e401e-42": 1792029007.8382723,
+      "cd5e401e-43": 1792029007.8588986,
+      "cd5e401e-44": 1792029007.8792422,
+      "cd5e401e-45": 1792029007.8999379,
+      "cd5e401e-46": 1792029007.9205945,
+      "cd5e401e-47": 1792029007.9411638,
+      "cd5e401e-48": 1792029007.9618137,
+      "cd5e401e-49": 1792029007.9825914,
+      "cd5e401e-5": 1792029007.0732505,
+      "cd5e401e-50": 1792029008.0033977,
+      "cd5e401e-51": 1792029008.0241957,
+      "cd5e401e-52": 1792029008.0452497,
+      "cd5e401e-53": 1792029008.065697,
+      "cd5e401e-54": 1792029008.0864704,
+      "cd5e401e-55": 1792029008.1069777,
+      "cd5e401e-56": 1792029008.1273334,
+      "cd5e401e-57": 1792029008.148107,
+      "cd5e401e-58": 1792029008.1690211,
+      "cd5e401e-59": 1792029008.190093,
+      "cd5e401e-6": 1792029007.0937893,
+      "cd5e401e-60": 1792029008.210931,
+      "cd5e401e-61": 1792029008.2314665,
+      "cd5e401e-62": 1792029008.2520201,
+      "cd5e401e-63": 1792029008.272863,
+      "cd5e401e-64": 1792029008.2933536,
+      "cd5e401e-65": 1792029008.3142982,
+      "cd5e401e-66": 1792029008.3348744,
+      "cd5e401e-67": 1792029008.3556125,
+      "cd5e401e-68": 1792029008.3760796,
+      "cd5e401e-69": 1792029008.396404,
+      "cd5e401e-7": 1792029007.1143944,
+      "cd5e401e-70": 1792029008.417141,
+      "cd5e401e-71": 1792029008.4376516,
+      "cd5e401e-72": 1792029008.4585335,
+      "cd5e401e-73": 1792029008.479147,
+      "cd5e401e-74": 1792029008.4999955,
+      "cd5e401e-75": 1792029008.5209322,
+      "cd5e401e-76": 1792029008.5415401,
+      "cd5e401e-77": 1792029008.5621848,
+      "cd5e401e-78": 1792029008.5828288,
+      "cd5e401e-79": 1792029008.6035492,
+      "cd5e401e-8": 1792029007.135152,
+      "cd5e401e-80": 1792029008.6244981,
+      "cd5e401e-81": 1792029008.6451328,
+      "cd5e401e-82": 1792029008.665778,
+      "cd5e401e-83": 1792029008.6866398,
+      "cd5e401e-84": 1792029008.7071996,
+      "cd5e401e-85": 1792029008.727884,
+      "cd5e401e-86": 1792029008.7484832,
+      "cd5e401e-87": 1792029008.7694614,
+      "cd5e401e-88": 1792029008.7902389,
+      "cd5e401e-89": 1792029008.8132398,
+      "cd5e401e-9": 1792029007.1557057,
+      "cd5e401e-90": 1792029008.8338873,
+      "cd5e401e-91": 1792029008.8547735,
+      "cd5e401e-92": 1792029008.8755488,
+      "cd5e401e-93": 1792029008.8963096,
+      "cd5e401e-94": 1792029008.9171488,
+      "cd5e401e-95": 1792029008.9376695,
+      "cd5e401e-96": 1792029008.958487,
+      "cd5e401e-97": 1792029008.9788733,
+      "cd5e401e-98": 1792029009.0000339,
+      "cd5e401e-99": 1792029009.0206828
+    }
+  },
+  "network_totals": {
+    "per_container": {
+      "bcf-pow-cd5e401e-n0": {
+        "rx_bytes": 152074,
+        "tx_bytes": 139123
+      },
+      "bcf-pow-cd5e401e-n1": {
+        "rx_bytes": 134847,
+        "tx_bytes": 137965
+      },
+      "bcf-pow-cd5e401e-n2": {
+        "rx_bytes": 134295,
+        "tx_bytes": 133420
+      }
+    },
+    "total_bytes": 831724,
+    "total_rx_bytes": 421216,
+    "total_tx_bytes": 410508
+  },
+  "node_count": 3,
+  "packet_loss_pct_applied": 0.0,
+  "provenance": {
+    "cpu_sampling": "Docker stats streaming, approximately 1 Hz",
+    "energy_estimator": "sum(cpu_avg/100/num_cpus*TDP*sample_duration)",
+    "images": {
+      "bcf-pow-cd5e401e-n0": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb",
+      "bcf-pow-cd5e401e-n1": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb",
+      "bcf-pow-cd5e401e-n2": "sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb"
+    },
+    "methodology": "fixed-post-submit-window-v3",
+    "network_effective": {
+      "bcf-pow-cd5e401e-n0": [
+        {
+          "handle": "80a0:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 5813770176964783408
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pow-cd5e401e-n1": [
+        {
+          "handle": "809f:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 10464188906706002941
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pow-cd5e401e-n2": [
+        {
+          "handle": "80a1:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 1968732472377546903
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ]
+    },
+    "num_cpus_energy": 22,
+    "observation_end_unix": 1792029014.042244,
+    "observation_start_unix": 1792029006.949552,
+    "post_submit_settle_seconds": 5.0,
+    "run_timeout_role": "network-rule lifetime; not a completion timeout",
+    "sampling_start_unix": {
+      "bcf-pow-cd5e401e-n0": 1792029004.744259,
+      "bcf-pow-cd5e401e-n1": 1792029005.7610567,
+      "bcf-pow-cd5e401e-n2": 1792029005.7616603
+    }
+  },
+  "quorum": 1,
+  "repetition": 4,
+  "resource_summary": {
+    "bcf-pow-cd5e401e-n0": {
+      "cpu_percent_avg": 91.96410040713707,
+      "cpu_percent_peak": 107.75916704391129,
+      "duration_s": 9.09425663948059,
+      "memory_mb_avg": 19.284765625,
+      "memory_mb_peak": 21.875,
+      "rx_bytes": 152074,
+      "sample_count": 10,
+      "tx_bytes": 139123
+    },
+    "bcf-pow-cd5e401e-n1": {
+      "cpu_percent_avg": 90.92983209901035,
+      "cpu_percent_peak": 106.86163669064747,
+      "duration_s": 8.080789566040039,
+      "memory_mb_avg": 19.885416666666668,
+      "memory_mb_peak": 21.96484375,
+      "rx_bytes": 134847,
+      "sample_count": 9,
+      "tx_bytes": 137965
+    },
+    "bcf-pow-cd5e401e-n2": {
+      "cpu_percent_avg": 91.06546851461981,
+      "cpu_percent_peak": 106.42467894027838,
+      "duration_s": 8.081475257873535,
+      "memory_mb_avg": 19.87847222222222,
+      "memory_mb_peak": 22.67578125,
+      "rx_bytes": 134295,
+      "sample_count": 9,
+      "tx_bytes": 133420
+    }
+  },
+  "run_id": "017e3e995d214ca29326db708115e8ae",
+  "started_at": "2026-10-15T01:49:56.627253+00:00",
+  "submit_window_s": 7.092688798904419,
+  "submitted": 100,
+  "tdp_watts": 45,
+  "throughput_observation_tps": 0.0,
+  "throughput_tps": 0.0,
+  "tx_count": 100,
+  "tx_rate_tps": 50
+}

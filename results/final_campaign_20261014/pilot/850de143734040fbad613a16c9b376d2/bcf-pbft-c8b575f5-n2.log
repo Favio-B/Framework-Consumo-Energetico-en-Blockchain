@@ -1,0 +1,203 @@
+{"event": "ready", "node_id": 2, "port": 5000}
+{"event":"prepared","seq":1,"ts":1792027868.482535,"node_id":2}
+{"event":"prepared","seq":2,"ts":1792027868.4841335,"node_id":2}
+{"event":"prepared","seq":5,"ts":1792027868.484927,"node_id":2}
+{"event":"prepared","seq":3,"ts":1792027868.4860861,"node_id":2}
+{"event":"prepared","seq":4,"ts":1792027868.486453,"node_id":2}
+{"event":"prepared","seq":6,"ts":1792027868.4922423,"node_id":2}
+{"event":"prepared","seq":13,"ts":1792027868.494007,"node_id":2}
+{"event":"prepared","seq":15,"ts":1792027868.4990993,"node_id":2}
+{"event":"prepared","seq":16,"ts":1792027868.522478,"node_id":2}
+{"event":"prepared","seq":18,"ts":1792027868.56126,"node_id":2}
+{"event":"prepared","seq":19,"ts":1792027868.5933573,"node_id":2}
+{"event":"prepared","seq":20,"ts":1792027868.6166823,"node_id":2}
+{"event":"committed","seq":3,"request_id":"c8b575f5-2","ts":1792027868.6313508,"node_id":2}
+{"event":"committed","seq":1,"request_id":"c8b575f5-0","ts":1792027868.6318712,"node_id":2}
+{"event":"committed","seq":2,"request_id":"c8b575f5-1","ts":1792027868.6359153,"node_id":2}
+{"event":"committed","seq":6,"request_id":"c8b575f5-5","ts":1792027868.643828,"node_id":2}
+{"event":"committed","seq":4,"request_id":"c8b575f5-3","ts":1792027868.6467211,"node_id":2}
+{"event":"committed","seq":15,"request_id":"c8b575f5-14","ts":1792027868.657431,"node_id":2}
+{"event":"prepared","seq":22,"ts":1792027868.6607957,"node_id":2}
+{"event":"committed","seq":16,"request_id":"c8b575f5-15","ts":1792027868.6785843,"node_id":2}
+{"event":"prepared","seq":23,"ts":1792027868.6830726,"node_id":2}
+{"event":"prepared","seq":24,"ts":1792027868.6993089,"node_id":2}
+{"event":"committed","seq":18,"request_id":"c8b575f5-17","ts":1792027868.7173157,"node_id":2}
+{"event":"prepared","seq":25,"ts":1792027868.721732,"node_id":2}
+{"event":"prepared","seq":26,"ts":1792027868.74355,"node_id":2}
+{"event":"committed","seq":19,"request_id":"c8b575f5-18","ts":1792027868.7486546,"node_id":2}
+{"event":"prepared","seq":27,"ts":1792027868.7722082,"node_id":2}
+{"event":"committed","seq":20,"request_id":"c8b575f5-19","ts":1792027868.7811127,"node_id":2}
+{"event":"prepared","seq":28,"ts":1792027868.7969823,"node_id":2}
+{"event":"prepared","seq":29,"ts":1792027868.81151,"node_id":2}
+{"event":"committed","seq":22,"request_id":"c8b575f5-21","ts":1792027868.8155396,"node_id":2}
+{"event":"prepared","seq":30,"ts":1792027868.8336124,"node_id":2}
+{"event":"committed","seq":23,"request_id":"c8b575f5-22","ts":1792027868.8374095,"node_id":2}
+{"event":"prepared","seq":31,"ts":1792027868.852997,"node_id":2}
+{"event":"committed","seq":24,"request_id":"c8b575f5-23","ts":1792027868.854848,"node_id":2}
+{"event":"committed","seq":25,"request_id":"c8b575f5-24","ts":1792027868.8742776,"node_id":2}
+{"event":"prepared","seq":32,"ts":1792027868.876798,"node_id":2}
+{"event":"prepared","seq":33,"ts":1792027868.8948126,"node_id":2}
+{"event":"committed","seq":26,"request_id":"c8b575f5-25","ts":1792027868.8986568,"node_id":2}
+{"event":"prepared","seq":34,"ts":1792027868.9159658,"node_id":2}
+{"event":"committed","seq":27,"request_id":"c8b575f5-26","ts":1792027868.931999,"node_id":2}
+{"event":"prepared","seq":35,"ts":1792027868.9390397,"node_id":2}
+{"event":"committed","seq":28,"request_id":"c8b575f5-27","ts":1792027868.9505923,"node_id":2}
+{"event":"prepared","seq":36,"ts":1792027868.9575412,"node_id":2}
+{"event":"committed","seq":29,"request_id":"c8b575f5-28","ts":1792027868.9698656,"node_id":2}
+{"event":"prepared","seq":37,"ts":1792027868.977558,"node_id":2}
+{"event":"committed","seq":30,"request_id":"c8b575f5-29","ts":1792027868.98727,"node_id":2}
+{"event":"prepared","seq":38,"ts":1792027868.9984105,"node_id":2}
+{"event":"committed","seq":31,"request_id":"c8b575f5-30","ts":1792027869.0104675,"node_id":2}
+{"event":"prepared","seq":39,"ts":1792027869.020863,"node_id":2}
+{"event":"committed","seq":32,"request_id":"c8b575f5-31","ts":1792027869.0303204,"node_id":2}
+{"event":"prepared","seq":40,"ts":1792027869.0423288,"node_id":2}
+{"event":"committed","seq":33,"request_id":"c8b575f5-32","ts":1792027869.0478907,"node_id":2}
+{"event":"prepared","seq":41,"ts":1792027869.061912,"node_id":2}
+{"event":"committed","seq":34,"request_id":"c8b575f5-33","ts":1792027869.067988,"node_id":2}
+{"event":"prepared","seq":42,"ts":1792027869.0875084,"node_id":2}
+{"event":"committed","seq":35,"request_id":"c8b575f5-34","ts":1792027869.0935118,"node_id":2}
+{"event":"prepared","seq":43,"ts":1792027869.1063778,"node_id":2}
+{"event":"committed","seq":36,"request_id":"c8b575f5-35","ts":1792027869.1113977,"node_id":2}
+{"event":"prepared","seq":44,"ts":1792027869.123585,"node_id":2}
+{"event":"committed","seq":37,"request_id":"c8b575f5-36","ts":1792027869.1364458,"node_id":2}
+{"event":"prepared","seq":45,"ts":1792027869.1464531,"node_id":2}
+{"event":"committed","seq":38,"request_id":"c8b575f5-37","ts":1792027869.1525285,"node_id":2}
+{"event":"prepared","seq":46,"ts":1792027869.1647944,"node_id":2}
+{"event":"committed","seq":39,"request_id":"c8b575f5-38","ts":1792027869.173531,"node_id":2}
+{"event":"prepared","seq":47,"ts":1792027869.1822617,"node_id":2}
+{"event":"committed","seq":40,"request_id":"c8b575f5-39","ts":1792027869.1937943,"node_id":2}
+{"event":"prepared","seq":48,"ts":1792027869.204039,"node_id":2}
+{"event":"committed","seq":41,"request_id":"c8b575f5-40","ts":1792027869.2125044,"node_id":2}
+{"event":"prepared","seq":49,"ts":1792027869.2240849,"node_id":2}
+{"event":"committed","seq":42,"request_id":"c8b575f5-41","ts":1792027869.2442563,"node_id":2}
+{"event":"prepared","seq":50,"ts":1792027869.248545,"node_id":2}
+{"event":"committed","seq":43,"request_id":"c8b575f5-42","ts":1792027869.256249,"node_id":2}
+{"event":"prepared","seq":51,"ts":1792027869.2694395,"node_id":2}
+{"event":"committed","seq":44,"request_id":"c8b575f5-43","ts":1792027869.2743895,"node_id":2}
+{"event":"prepared","seq":52,"ts":1792027869.289955,"node_id":2}
+{"event":"committed","seq":45,"request_id":"c8b575f5-44","ts":1792027869.2964191,"node_id":2}
+{"event":"prepared","seq":53,"ts":1792027869.309154,"node_id":2}
+{"event":"committed","seq":46,"request_id":"c8b575f5-45","ts":1792027869.3168886,"node_id":2}
+{"event":"prepared","seq":54,"ts":1792027869.3285818,"node_id":2}
+{"event":"committed","seq":47,"request_id":"c8b575f5-46","ts":1792027869.3360913,"node_id":2}
+{"event":"prepared","seq":55,"ts":1792027869.3521733,"node_id":2}
+{"event":"committed","seq":48,"request_id":"c8b575f5-47","ts":1792027869.3577857,"node_id":2}
+{"event":"prepared","seq":56,"ts":1792027869.374476,"node_id":2}
+{"event":"committed","seq":49,"request_id":"c8b575f5-48","ts":1792027869.3777103,"node_id":2}
+{"event":"prepared","seq":57,"ts":1792027869.3940783,"node_id":2}
+{"event":"committed","seq":50,"request_id":"c8b575f5-49","ts":1792027869.4042597,"node_id":2}
+{"event":"prepared","seq":17,"ts":1792027869.4122846,"node_id":2}
+{"event":"prepared","seq":58,"ts":1792027869.4133155,"node_id":2}
+{"event":"committed","seq":51,"request_id":"c8b575f5-50","ts":1792027869.4252148,"node_id":2}
+{"event":"prepared","seq":59,"ts":1792027869.4341314,"node_id":2}
+{"event":"committed","seq":52,"request_id":"c8b575f5-51","ts":1792027869.443437,"node_id":2}
+{"event":"prepared","seq":60,"ts":1792027869.4558287,"node_id":2}
+{"event":"committed","seq":53,"request_id":"c8b575f5-52","ts":1792027869.4629333,"node_id":2}
+{"event":"prepared","seq":61,"ts":1792027869.4791467,"node_id":2}
+{"event":"committed","seq":54,"request_id":"c8b575f5-53","ts":1792027869.4821372,"node_id":2}
+{"event":"prepared","seq":62,"ts":1792027869.4938014,"node_id":2}
+{"event":"committed","seq":55,"request_id":"c8b575f5-54","ts":1792027869.5075655,"node_id":2}
+{"event":"prepared","seq":63,"ts":1792027869.5165343,"node_id":2}
+{"event":"committed","seq":56,"request_id":"c8b575f5-55","ts":1792027869.5262263,"node_id":2}
+{"event":"prepared","seq":64,"ts":1792027869.5355847,"node_id":2}
+{"event":"committed","seq":57,"request_id":"c8b575f5-56","ts":1792027869.5519133,"node_id":2}
+{"event":"prepared","seq":65,"ts":1792027869.5603771,"node_id":2}
+{"event":"committed","seq":58,"request_id":"c8b575f5-57","ts":1792027869.5669675,"node_id":2}
+{"event":"prepared","seq":66,"ts":1792027869.5851262,"node_id":2}
+{"event":"committed","seq":59,"request_id":"c8b575f5-58","ts":1792027869.5925388,"node_id":2}
+{"event":"prepared","seq":67,"ts":1792027869.5999243,"node_id":2}
+{"event":"committed","seq":60,"request_id":"c8b575f5-59","ts":1792027869.6113088,"node_id":2}
+{"event":"prepared","seq":68,"ts":1792027869.6224277,"node_id":2}
+{"event":"committed","seq":61,"request_id":"c8b575f5-60","ts":1792027869.631893,"node_id":2}
+{"event":"prepared","seq":69,"ts":1792027869.64222,"node_id":2}
+{"event":"committed","seq":62,"request_id":"c8b575f5-61","ts":1792027869.6484785,"node_id":2}
+{"event":"prepared","seq":70,"ts":1792027869.667518,"node_id":2}
+{"event":"committed","seq":63,"request_id":"c8b575f5-62","ts":1792027869.670837,"node_id":2}
+{"event":"prepared","seq":71,"ts":1792027869.686473,"node_id":2}
+{"event":"committed","seq":64,"request_id":"c8b575f5-63","ts":1792027869.6902146,"node_id":2}
+{"event":"prepared","seq":72,"ts":1792027869.7058895,"node_id":2}
+{"event":"committed","seq":65,"request_id":"c8b575f5-64","ts":1792027869.714312,"node_id":2}
+{"event":"committed","seq":17,"request_id":"c8b575f5-16","ts":1792027869.7196295,"node_id":2}
+{"event":"prepared","seq":73,"ts":1792027869.7264254,"node_id":2}
+{"event":"committed","seq":66,"request_id":"c8b575f5-65","ts":1792027869.7415838,"node_id":2}
+{"event":"prepared","seq":74,"ts":1792027869.750622,"node_id":2}
+{"event":"committed","seq":67,"request_id":"c8b575f5-66","ts":1792027869.754753,"node_id":2}
+{"event":"prepared","seq":75,"ts":1792027869.7653854,"node_id":2}
+{"event":"committed","seq":68,"request_id":"c8b575f5-67","ts":1792027869.7773666,"node_id":2}
+{"event":"prepared","seq":76,"ts":1792027869.7895706,"node_id":2}
+{"event":"committed","seq":69,"request_id":"c8b575f5-68","ts":1792027869.7939975,"node_id":2}
+{"event":"prepared","seq":77,"ts":1792027869.8121333,"node_id":2}
+{"event":"committed","seq":70,"request_id":"c8b575f5-69","ts":1792027869.8236446,"node_id":2}
+{"event":"prepared","seq":78,"ts":1792027869.8295598,"node_id":2}
+{"event":"committed","seq":71,"request_id":"c8b575f5-70","ts":1792027869.8396792,"node_id":2}
+{"event":"prepared","seq":79,"ts":1792027869.8478062,"node_id":2}
+{"event":"committed","seq":72,"request_id":"c8b575f5-71","ts":1792027869.8600097,"node_id":2}
+{"event":"prepared","seq":80,"ts":1792027869.8768017,"node_id":2}
+{"event":"committed","seq":73,"request_id":"c8b575f5-72","ts":1792027869.8844006,"node_id":2}
+{"event":"prepared","seq":81,"ts":1792027869.8983226,"node_id":2}
+{"event":"committed","seq":74,"request_id":"c8b575f5-73","ts":1792027869.9035697,"node_id":2}
+{"event":"prepared","seq":82,"ts":1792027869.9166129,"node_id":2}
+{"event":"committed","seq":75,"request_id":"c8b575f5-74","ts":1792027869.920378,"node_id":2}
+{"event":"prepared","seq":83,"ts":1792027869.936633,"node_id":2}
+{"event":"committed","seq":76,"request_id":"c8b575f5-75","ts":1792027869.9442472,"node_id":2}
+{"event":"prepared","seq":84,"ts":1792027869.9574912,"node_id":2}
+{"event":"committed","seq":77,"request_id":"c8b575f5-76","ts":1792027869.9639409,"node_id":2}
+{"event":"prepared","seq":85,"ts":1792027869.97934,"node_id":2}
+{"event":"committed","seq":78,"request_id":"c8b575f5-77","ts":1792027869.9855645,"node_id":2}
+----------------------------------------
+Exception occurred during processing of request from ('172.20.0.2', 49278)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/app/node.py", line 317, in handle
+    for line in self.rfile:
+                ^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+----------------------------------------
+{"event":"prepared","seq":86,"ts":1792027869.997243,"node_id":2}
+{"event":"committed","seq":79,"request_id":"c8b575f5-78","ts":1792027870.0014455,"node_id":2}
+{"event":"prepared","seq":87,"ts":1792027870.017753,"node_id":2}
+{"event":"committed","seq":80,"request_id":"c8b575f5-79","ts":1792027870.0370023,"node_id":2}
+{"event":"prepared","seq":88,"ts":1792027870.040878,"node_id":2}
+{"event":"committed","seq":81,"request_id":"c8b575f5-80","ts":1792027870.0530095,"node_id":2}
+{"event":"committed","seq":82,"request_id":"c8b575f5-81","ts":1792027870.0681207,"node_id":2}
+{"event":"prepared","seq":89,"ts":1792027870.07231,"node_id":2}
+{"event":"prepared","seq":90,"ts":1792027870.091383,"node_id":2}
+{"event":"committed","seq":83,"request_id":"c8b575f5-82","ts":1792027870.093367,"node_id":2}
+{"event":"prepared","seq":91,"ts":1792027870.1035023,"node_id":2}
+{"event":"committed","seq":84,"request_id":"c8b575f5-83","ts":1792027870.1126063,"node_id":2}
+{"event":"prepared","seq":92,"ts":1792027870.1241438,"node_id":2}
+{"event":"committed","seq":85,"request_id":"c8b575f5-84","ts":1792027870.1338942,"node_id":2}
+{"event":"prepared","seq":93,"ts":1792027870.1445284,"node_id":2}
+{"event":"committed","seq":86,"request_id":"c8b575f5-85","ts":1792027870.150278,"node_id":2}
+{"event":"prepared","seq":94,"ts":1792027870.1692054,"node_id":2}
+{"event":"committed","seq":87,"request_id":"c8b575f5-86","ts":1792027870.1730342,"node_id":2}
+{"event":"prepared","seq":95,"ts":1792027870.1875968,"node_id":2}
+{"event":"committed","seq":88,"request_id":"c8b575f5-87","ts":1792027870.1938336,"node_id":2}
+{"event":"prepared","seq":96,"ts":1792027870.2088964,"node_id":2}
+{"event":"committed","seq":89,"request_id":"c8b575f5-88","ts":1792027870.2264276,"node_id":2}
+{"event":"prepared","seq":97,"ts":1792027870.2291124,"node_id":2}
+{"event":"committed","seq":90,"request_id":"c8b575f5-89","ts":1792027870.2486107,"node_id":2}
+{"event":"prepared","seq":98,"ts":1792027870.2514741,"node_id":2}
+{"event":"committed","seq":91,"request_id":"c8b575f5-90","ts":1792027870.2560835,"node_id":2}
+{"event":"prepared","seq":99,"ts":1792027870.2714608,"node_id":2}
+{"event":"committed","seq":92,"request_id":"c8b575f5-91","ts":1792027870.2749228,"node_id":2}
+{"event":"prepared","seq":100,"ts":1792027870.2906363,"node_id":2}
+{"event":"committed","seq":93,"request_id":"c8b575f5-92","ts":1792027870.2990522,"node_id":2}
+{"event":"committed","seq":94,"request_id":"c8b575f5-93","ts":1792027870.3262866,"node_id":2}
+{"event":"committed","seq":95,"request_id":"c8b575f5-94","ts":1792027870.3440244,"node_id":2}
+{"event":"committed","seq":96,"request_id":"c8b575f5-95","ts":1792027870.3626347,"node_id":2}
+{"event":"committed","seq":97,"request_id":"c8b575f5-96","ts":1792027870.381836,"node_id":2}
+{"event":"committed","seq":98,"request_id":"c8b575f5-97","ts":1792027870.4053648,"node_id":2}
+{"event":"committed","seq":99,"request_id":"c8b575f5-98","ts":1792027870.4247823,"node_id":2}
+{"event":"committed","seq":100,"request_id":"c8b575f5-99","ts":1792027870.4454606,"node_id":2}

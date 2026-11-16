@@ -1,0 +1,149 @@
+[
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "energy_joules",
+    "test": "Kruskal-Wallis",
+    "statistic": 25.80645161290323,
+    "p_raw": 2.49000508218493e-06,
+    "n_each": 10,
+    "population": "all planned trials",
+    "shapiro": {
+      "pow": [
+        0.7579183299273068,
+        0.004456088890014447
+      ],
+      "pbft": [
+        0.9037371070276211,
+        0.2406784774749643
+      ],
+      "pos": [
+        0.9630720577157207,
+        0.8202533105089702
+      ]
+    },
+    "p_holm": 1.494003049310958e-05,
+    "reject_at_0_05": true
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "throughput_observation_tps",
+    "test": "Kruskal-Wallis",
+    "statistic": 12.35421955021152,
+    "p_raw": 0.0020764205126605787,
+    "n_each": 10,
+    "population": "all planned trials",
+    "shapiro": {
+      "pow": [
+        0.8924826220156741,
+        0.18082057040473276
+      ],
+      "pbft": [
+        0.9251207455201906,
+        0.4016474573077367
+      ],
+      "pos": [
+        0.370355809379431,
+        1.1349000046878638e-07
+      ]
+    },
+    "p_holm": 0.0020764205126605787,
+    "reject_at_0_05": true
+  },
+  {
+    "experiment": "final_n3_baseline",
+    "metric": "completion_fraction",
+    "test": "Kruskal-Wallis",
+    "statistic": 18.60718581829695,
+    "p_raw": 9.109634191194118e-05,
+    "n_each": 10,
+    "population": "all planned trials",
+    "shapiro": {
+      "pow": [
+        0.8926226298381202,
+        0.18147444700871534
+      ],
+      "pbft": null,
+      "pos": [
+        0.36572062769765235,
+        1.0036928213864587e-07
+      ]
+    },
+    "p_holm": 0.00018219268382388236,
+    "reject_at_0_05": true
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "energy_joules",
+    "test": "Kruskal-Wallis",
+    "statistic": 25.80645161290323,
+    "p_raw": 2.49000508218493e-06,
+    "n_each": 10,
+    "population": "all planned trials",
+    "shapiro": {
+      "pow": [
+        0.7641508042469514,
+        0.00530740356066144
+      ],
+      "pbft": [
+        0.9469686537046241,
+        0.6327963339406447
+      ],
+      "pos": [
+        0.9538064492292306,
+        0.7135998853035944
+      ]
+    },
+    "p_holm": 1.494003049310958e-05,
+    "reject_at_0_05": true
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "throughput_observation_tps",
+    "test": "Kruskal-Wallis",
+    "statistic": 21.20082285714286,
+    "p_raw": 2.4905760681734158e-05,
+    "n_each": 10,
+    "population": "all planned trials",
+    "shapiro": {
+      "pow": [
+        0.4362382340676719,
+        6.55772092340424e-07
+      ],
+      "pbft": [
+        0.9684416968052735,
+        0.8760327844484019
+      ],
+      "pos": [
+        0.3714018170670623,
+        1.166816612888497e-07
+      ]
+    },
+    "p_holm": 7.471728204520247e-05,
+    "reject_at_0_05": true
+  },
+  {
+    "experiment": "final_n4_baseline",
+    "metric": "completion_fraction",
+    "test": "Kruskal-Wallis",
+    "statistic": 21.83979279491406,
+    "p_raw": 1.8094611024860205e-05,
+    "n_each": 10,
+    "population": "all planned trials",
+    "shapiro": {
+      "pow": [
+        0.4360618141566053,
+        6.526856086636211e-07
+      ],
+      "pbft": [
+        0.9585606910286444,
+        0.7693438762995444
+      ],
+      "pos": [
+        0.36572062769765235,
+        1.0036928213864587e-07
+      ]
+    },
+    "p_holm": 7.237844409944082e-05,
+    "reject_at_0_05": true
+  }
+]

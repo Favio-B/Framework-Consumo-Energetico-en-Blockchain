@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Experiments{% endblock %}
+{% block content %}
+  <h1>Experiments</h1>
+  <p>One row per experiment name in <code>experiments.db</code>. Click a name to
+     see the per-metric comparison (descriptives, statistical test, plots).</p>
+
+  {% if experiments %}
+    <table>
+      <thead>
+        <tr>
+          <th>Experiment</th>
+          <th># runs</th>
+          <th>Algorithms</th>
+          <th>Last run (UTC)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for exp in experiments %}
+          <tr>
+            <td><a href="{{ url_for('experiment_detail', name=exp.name) }}">{{ exp.name }}</a></td>
+            <td>{{ exp.n_runs }}</td>
+            <td>{{ exp.algorithms | join(', ') }}</td>
+            <td>{{ exp.last_run_at or '—' }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty">
+      No experiments yet. Populate the database with
+      <code>python run_experiment.py --config experiment.yaml</code>
+      and reload this page.
+    </p>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Framework experimental · Energía y desempeño de PoW, PoS y PBFT</title>
+  <meta name="description" content="Resultados de 90 ejecuciones controladas que comparan el consumo energético estimado y el desempeño de Proof of Work, Proof of Stake y PBFT en un framework Docker reproducible. Universidad Libre, Bogotá.">
+  <meta name="author" content="Favio Alejandro Bernal González, Luisa María López Rugeles">
+  <meta property="og:title" content="Framework experimental de consenso blockchain">
+  <meta property="og:description" content="PoW gastó entre 28 y 688 veces más energía por transacción confirmada que PBFT y PoS en 90 ejecuciones controladas.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#020617">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='4' width='10' height='10' rx='2' fill='%23f59e0b'/%3E%3Crect x='18' y='4' width='10' height='10' rx='2' fill='%2310b981'/%3E%3Crect x='11' y='18' width='10' height='10' rx='2' fill='%2338bdf8'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <!-- Configuración única del sitio: URL del repositorio en GitHub -->
+  <script>window.SITE_CONFIG = { repoUrl: "https://github.com/Favio-B/Framework-Consumo-Energetico-en-Blockchain" };</script>
+</head>
+<body class="bg-ink text-slate-300 antialiased selection:bg-pbft/30">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 btn">Saltar al contenido</a>
+
+  <!-- ================= Navegación ================= -->
+  <header id="nav" class="fixed inset-x-0 top-0 z-40 transition-colors duration-300">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4" aria-label="Principal">
+      <a href="#inicio" class="flex items-center gap-2 font-semibold text-white">
+        <span class="grid grid-cols-2 gap-0.5" aria-hidden="true">
+          <span class="h-2 w-2 rounded-sm bg-pow"></span><span class="h-2 w-2 rounded-sm bg-pos"></span>
+          <span class="h-2 w-2 rounded-sm bg-pbft"></span><span class="h-2 w-2 rounded-sm bg-white/30"></span>
+        </span>
+        <span class="tracking-tight">Consensus<span class="text-pbft">Lab</span></span>
+      </a>
+      <ul class="hidden items-center gap-1 text-sm lg:flex">
+        <li><a class="nav-link" href="#problema">Problema</a></li>
+        <li><a class="nav-link" href="#arquitectura">Arquitectura</a></li>
+        <li><a class="nav-link" href="#protocolo">Protocolo</a></li>
+        <li><a class="nav-link" href="#resultados">Resultados</a></li>
+        <li><a class="nav-link" href="#dificultad">Dificultad PoW</a></li>
+        <li><a class="nav-link" href="#estadistica">Estadística</a></li>
+        <li><a class="nav-link" href="#limitaciones">Limitaciones</a></li>
+      </ul>
+      <a data-repo-link class="btn btn-ghost hidden sm:inline-flex" href="#" target="_blank" rel="noopener">
+        <i class="bi bi-github" aria-hidden="true"></i> Código
+      </a>
+      <button id="menu-btn" class="btn btn-ghost lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <i class="bi bi-list text-xl" aria-hidden="true"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-white/10 bg-ink/95 px-5 pb-4 backdrop-blur lg:hidden">
+      <ul class="grid gap-1 pt-3 text-sm">
+        <li><a class="nav-link block" href="#problema">Problema</a></li>
+        <li><a class="nav-link block" href="#arquitectura">Arquitectura</a></li>
+        <li><a class="nav-link block" href="#protocolo">Protocolo</a></li>
+        <li><a class="nav-link block" href="#resultados">Resultados</a></li>
+        <li><a class="nav-link block" href="#dificultad">Dificultad PoW</a></li>
+        <li><a class="nav-link block" href="#estadistica">Estadística</a></li>
+        <li><a class="nav-link block" href="#limitaciones">Limitaciones</a></li>
+        <li><a class="nav-link block" data-repo-link href="#" target="_blank" rel="noopener"><i class="bi bi-github"></i> Código</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- ================= Hero 3D ================= -->
+    <section id="inicio" class="relative isolate flex min-h-[100svh] items-center overflow-hidden">
+      <canvas id="hero-canvas" class="absolute inset-0 -z-10 h-full w-full" aria-hidden="true"></canvas>
+      <div class="hero-fallback absolute inset-0 -z-20" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-ink/30 via-ink/40 to-ink"></div>
+
+      <div class="mx-auto w-full max-w-7xl px-5 pt-28 pb-16">
+        <p class="hero-line chip"><i class="bi bi-mortarboard" aria-hidden="true"></i> Universidad Libre · Bogotá · COI 2026-2</p>
+        <h1 class="hero-line mt-6 max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+          ¿Cuánta energía cuesta <span class="text-gradient">ponerse de acuerdo</span>?
+        </h1>
+        <p class="hero-line mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
+          Un framework experimental reproducible en Docker que mide energía estimada y desempeño de
+          <strong class="text-pow">Proof of Work</strong>, <strong class="text-pos">Proof of Stake</strong> y
+          <strong class="text-pbft">PBFT</strong> bajo las mismas condiciones de red, carga y recursos.
+        </p>
+        <div class="hero-line mt-8 flex flex-wrap gap-3">
+          <a href="#resultados" class="btn btn-primary"><i class="bi bi-bar-chart-line" aria-hidden="true"></i> Ver resultados</a>
+          <a href="#reproducir" class="btn btn-ghost"><i class="bi bi-terminal" aria-hidden="true"></i> Reproducir</a>
+        </div>
+
+        <dl class="hero-line mt-14 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="kpi"><dt>Ejecuciones controladas</dt><dd><span data-count="runs">0</span></dd></div>
+          <div class="kpi"><dt>Grupos experimentales</dt><dd><span data-count="groups">0</span></dd></div>
+          <div class="kpi"><dt>J/tx PoW vs. alternativas</dt><dd><span data-count="ratioMin">0</span>–<span data-count="ratioMax">0</span>×</dd></div>
+          <div class="kpi"><dt>Discrepancias de auditoría</dt><dd><span data-count="audit">0</span></dd></div>
+        </dl>
+        <p class="hero-line mt-10 text-sm text-slate-400">
+          Favio Alejandro Bernal González · Luisa María López Rugeles — Ingeniería de Sistemas
+        </p>
+      </div>
+      <a href="#problema" class="scroll-cue" aria-label="Desplazarse a la siguiente sección"><i class="bi bi-chevron-double-down" aria-hidden="true"></i></a>
+    </section>
+
+    <!-- ================= Problema ================= -->
+    <section id="problema" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 · Problema</p>
+        <h2 class="section-title">El consenso no es gratis, y no todos cuestan lo mismo</h2>
+        <p class="section-lead">Las comparaciones existentes mezclan entornos, cargas y redes distintas, o usan datos de cadenas en producción donde nada se controla. Faltaba un banco de pruebas común.</p>
+      </div>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="card reveal">
+          <i class="bi bi-diagram-3 card-icon text-pbft" aria-hidden="true"></i>
+          <h3 class="card-title">Criterios heterogéneos</h3>
+          <p>Los estudios de desempeño usan métricas y entornos distintos; no se identificó un benchmark estandarizado que compare PoW, PoS y PBFT en condiciones idénticas.</p>
+        </article>
+        <article class="card reveal">
+          <i class="bi bi-globe2 card-icon text-pos" aria-hidden="true"></i>
+          <h3 class="card-title">Datos de producción</h3>
+          <p>Bitcoin o Ethereum no permiten fijar carga, número de nodos ni condiciones de red: no sirven para aislar el efecto del algoritmo.</p>
+        </article>
+        <article class="card reveal">
+          <i class="bi bi-lightning-charge card-icon text-pow" aria-hidden="true"></i>
+          <h3 class="card-title">Energía fuera del foco</h3>
+          <p>Simuladores como BlockSim, SimBlock o Hyperledger Caliper no integran un modelo energético junto con la comparación bajo una misma configuración.</p>
+        </article>
+      </div>
+      <div class="card reveal mt-5 border-pbft/30 bg-gradient-to-br from-pbft/10 to-transparent">
+        <p class="eyebrow !mb-2">Hipótesis</p>
+        <p class="text-lg text-white">PBFT y PoS consumen, por transacción confirmada, estadísticamente menos energía que PoW y mantienen mejores tasas de éxito bajo condiciones de red controladas y reproducibles (α = 0.05).</p>
+      </div>
+    </section>
+
+    <!-- ================= Arquitectura ================= -->
+    <section id="arquitectura" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 · Arquitectura</p>
+        <h2 class="section-title">Seis capas, una interfaz común</h2>
+        <p class="section-lead">Los tres algoritmos implementan el mismo contrato <code class="code-inline">ConsensusModule</code> (start · submit_transactions · get_metrics · stop). El orquestador no sabe qué algoritmo ejecuta.</p>
+      </div>
+      <div class="grid items-start gap-8 lg:grid-cols-5">
+        <ol class="layer-stack lg:col-span-3" aria-label="Capas del framework">
+          <li class="layer"><span class="layer-n">0</span><div><h3>Entrada</h3><p>CLI (Click) · dashboard Flask · <code>experiment.yaml</code> declarativo</p></div></li>
+          <li class="layer"><span class="layer-n">1</span><div><h3>Orquestador</h3><p>ScenarioRunner · DockerManager · NetworkController (Pumba / tc-netem) · bloqueo exclusivo de ejecución</p></div></li>
+          <li class="layer"><span class="layer-n">2</span><div><h3>Consenso</h3><p><span class="text-pow">PoW</span> SHA-256 propio · <span class="text-pos">PoS</span> por ranuras con Ed25519 · <span class="text-pbft">PBFT</span> Castro &amp; Liskov</p></div></li>
+          <li class="layer"><span class="layer-n">3</span><div><h3>Monitoreo</h3><p>EnergyEstimator (proxy CPU·TDP) · ResourceMonitor · TxTracker · NetMonitor</p></div></li>
+          <li class="layer"><span class="layer-n">4</span><div><h3>Almacenamiento</h3><p>SQLite · CSV crudo · snapshot JSON por UUID · logs por nodo · hashes SHA-256</p></div></li>
+          <li class="layer"><span class="layer-n">5</span><div><h3>Análisis</h3><p>Shapiro-Wilk → Kruskal-Wallis · Mann-Whitney + Holm · delta de Cliff · bootstrap</p></div></li>
+        </ol>
+        <div class="card reveal lg:col-span-2">
+          <p class="eyebrow !mb-3">Modelo energético (proxy)</p>
+          <div class="formula" role="math" aria-label="E igual a la suma sobre los nodos de cpu porcentaje sobre cien por N cpu, por TDP, por t">
+            E = <span class="text-3xl leading-none">Σ</span><sub>i=1..k</sub> ( cpu<sub>i</sub>% / (100 · N<sub>cpu</sub>) ) · TDP · t
+          </div>
+          <dl class="mt-5 grid grid-cols-2 gap-3 text-sm">
+            <div class="mini"><dt>CPU host</dt><dd data-hw="name">—</dd></div>
+            <div class="mini"><dt>N<sub>cpu</sub> lógicas</dt><dd data-hw="logical">—</dd></div>
+            <div class="mini"><dt>TDP</dt><dd>45 W</dd></div>
+            <div class="mini"><dt>Límite por nodo</dt><dd>2 CPU · 2 GiB</dd></div>
+          </dl>
+          <p class="mt-4 text-sm text-slate-400"><i class="bi bi-info-circle" aria-hidden="true"></i> Es una estimación por software, no una medición con wattímetro ni RAPL. Sirve para comparar algoritmos en el mismo equipo, no como energía física absoluta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Protocolo ================= -->
+    <section id="protocolo" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 · Protocolo experimental</p>
+        <h2 class="section-title">90 ejecuciones, ninguna descartada</h2>
+        <p class="section-lead">Nueve grupos de diez repeticiones con orden aleatorizado por bloques (semilla 20261014). Las ejecuciones fallidas se conservan y cuentan en la energía.</p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="card reveal"><i class="bi bi-boxes card-icon text-pbft" aria-hidden="true"></i><h3 class="card-title">Escenarios</h3><p>3 algoritmos × {3, 4} nodos, más barrido de dificultad PoW 14/16/18/20 bits con 3 nodos.</p></div>
+        <div class="card reveal"><i class="bi bi-send card-icon text-pos" aria-hidden="true"></i><h3 class="card-title">Carga</h3><p>100 transacciones a 50 TPS. Bloques de 20 tx y 1 confirmación (PoW/PoS); ranuras PoS de 0.5 s.</p></div>
+        <div class="card reveal"><i class="bi bi-router card-icon text-pow" aria-hidden="true"></i><h3 class="card-title">Red emulada</h3><p>50 ms de latencia sin jitter, 10 Mbps y 0 % de pérdida, aplicados con Pumba y verificados en cada nodo.</p></div>
+        <div class="card reveal"><i class="bi bi-shield-check card-icon text-white" aria-hidden="true"></i><h3 class="card-title">Trazabilidad</h3><p>Imágenes fijadas por digest, código con hash SHA-256, snapshot de configuración y logs por corrida.</p></div>
+      </div>
+      <div class="card reveal mt-5">
+        <div class="grid gap-6 md:grid-cols-3">
+          <div><p class="eyebrow !mb-1">Confirmación</p><p>Una transacción cuenta cuando al menos <strong class="text-white">2f + 1</strong> nodos la confirman, con f = ⌊(n − 1)/3⌋ (quórum 1 con 3 nodos, 3 con 4). Es una convención de observación, no equivalencia de seguridad.</p></div>
+          <div><p class="eyebrow !mb-1">Ventana</p><p>La observación se cierra 5 s después del envío (~7.1 s). Con 100 tx el throughput máximo observable es ~14.1 TPS: no mide capacidad máxima.</p></div>
+          <div><p class="eyebrow !mb-1">Clasificación</p><p>Cada ejecución es <span class="tag tag-zero">cero</span>, <span class="tag tag-partial">parcial</span> o <span class="tag tag-full">completa</span> según las transacciones confirmadas por quórum.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Resultados ================= -->
+    <section id="resultados" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 · Resultados</p>
+        <h2 class="section-title">Energía por transacción confirmada</h2>
+        <p class="section-lead">Energía total de todas las ejecuciones del grupo (incluidas las fallidas) dividida entre las transacciones realmente confirmadas. Escala logarítmica, IC 95 % bootstrap (10 000 remuestreos).</p>
+      </div>
+
+      <div class="grid gap-5 lg:grid-cols-3">
+        <figure class="card reveal lg:col-span-2">
+          <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+            <figcaption class="card-title !mb-0">J/tx por algoritmo</figcaption>
+            <div class="seg" role="group" aria-label="Número de nodos">
+              <button class="seg-btn is-active" data-jtx-nodes="3" aria-pressed="true">3 nodos</button>
+              <button class="seg-btn" data-jtx-nodes="4" aria-pressed="false">4 nodos</button>
+            </div>
+          </div>
+          <div id="chart-jtx" class="chart h-[360px]" role="img" aria-label="Gráfico de energía por transacción confirmada"></div>
+          <p id="jtx-note" class="mt-2 text-sm text-slate-400"></p>
+        </figure>
+        <div class="grid gap-5">
+          <div class="card reveal ratio-card"><p class="eyebrow !mb-1">PoW / PoS</p><p class="ratio"><span id="ratio-pos">—</span>×</p><p class="text-sm text-slate-400">más energía por tx confirmada</p></div>
+          <div class="card reveal ratio-card"><p class="eyebrow !mb-1">PoW / PBFT</p><p class="ratio"><span id="ratio-pbft">—</span>×</p><p class="text-sm text-slate-400">más energía por tx confirmada</p></div>
+        </div>
+      </div>
+
+      <div class="mt-5 grid gap-5 lg:grid-cols-2">
+        <figure class="card reveal">
+          <figcaption class="card-title">Energía media por ejecución · vista 3D</figcaption>
+          <div id="chart-3d" class="chart h-[380px]" role="img" aria-label="Barras 3D de energía media por ejecución según algoritmo y número de nodos"></div>
+          <p class="mt-2 text-sm text-slate-400"><i class="bi bi-arrows-move" aria-hidden="true"></i> Arrastra para rotar. La energía por ejecución no depende de cuántas tx se confirmen.</p>
+        </figure>
+        <figure class="card reveal">
+          <figcaption class="card-title">Resultado de cada ejecución</figcaption>
+          <div id="chart-outcomes" class="chart h-[380px]" role="img" aria-label="Ejecuciones con cero, parcial o completa por grupo"></div>
+        </figure>
+      </div>
+
+      <figure class="card reveal mt-5">
+        <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+          <figcaption class="card-title !mb-0">Las 60 ejecuciones base, una por punto</figcaption>
+          <p class="text-sm text-slate-400"><span class="legend-dot bg-pow"></span>PoW <span class="legend-dot bg-pos ml-3"></span>PoS <span class="legend-dot bg-pbft ml-3"></span>PBFT · ● 3 nodos ◆ 4 nodos</p>
+        </div>
+        <div id="chart-scatter" class="chart h-[420px]" role="img" aria-label="Dispersión de energía frente a throughput por ejecución"></div>
+      </figure>
+
+      <!-- Desempeño -->
+      <div class="section-head reveal mt-24">
+        <h2 class="section-title">Desempeño y recursos</h2>
+        <p class="section-lead">Throughput observado sobre la ventana de ~7.1 s y latencia de confirmación por quórum (media de los p50 por ejecución, solo ejecuciones con progreso).</p>
+      </div>
+      <div class="card reveal overflow-x-auto p-0">
+        <table class="data-table" id="table-perf">
+          <caption class="sr-only">Throughput, latencia y resultado por grupo</caption>
+          <thead><tr><th scope="col">Algoritmo</th><th scope="col">Nodos</th><th scope="col">Ejec. 0/P/C</th><th scope="col">Tx conf.</th><th scope="col">TPS media (DE)</th><th scope="col">Lat. quórum p50</th><th scope="col">Energía/ejec.</th><th scope="col">J/tx [IC 95 %]</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="mt-5 grid gap-5 lg:grid-cols-2">
+        <figure class="card reveal">
+          <div class="mb-3 flex flex-wrap items-center justify-between gap-3">
+            <figcaption class="card-title !mb-0">Recursos (suma de nodos)</figcaption>
+            <div class="seg" role="group" aria-label="Métrica de recursos">
+              <button class="seg-btn is-active" data-res="cpu" aria-pressed="true">CPU</button>
+              <button class="seg-btn" data-res="mem" aria-pressed="false">Memoria</button>
+              <button class="seg-btn" data-res="rx" aria-pressed="false">Red RX</button>
+            </div>
+          </div>
+          <div id="chart-resources" class="chart h-[340px]" role="img" aria-label="Uso de recursos por algoritmo"></div>
+        </figure>
+        <figure class="card reveal" id="escalabilidad">
+          <figcaption class="card-title">Escalabilidad: de 3 a 4 nodos</figcaption>
+          <div id="chart-scale" class="chart h-[340px]" role="img" aria-label="Cambio de throughput y ejecuciones sin progreso al pasar de 3 a 4 nodos"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= Dificultad ================= -->
+    <section id="dificultad" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 · Barrido de dificultad</p>
+        <h2 class="section-title">PoW: mismo gasto, menos confirmaciones</h2>
+        <p class="section-lead">Con 3 nodos, la energía por ejecución se mantuvo casi constante entre dificultades; lo que cambia es cuántas transacciones logran confirmarse con ese gasto.</p>
+      </div>
+      <div class="grid gap-5 lg:grid-cols-3">
+        <figure class="card reveal lg:col-span-2">
+          <figcaption class="card-title">J/tx y completitud según bits de dificultad</figcaption>
+          <div id="chart-difficulty" class="chart h-[400px]" role="img" aria-label="Barrido de dificultad de PoW"></div>
+        </figure>
+        <div class="grid content-start gap-4" id="difficulty-cards"></div>
+      </div>
+    </section>
+
+    <!-- ================= Estadística ================= -->
+    <section id="estadistica" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">06 · Análisis estadístico</p>
+        <h2 class="section-title">Pruebas no paramétricas con corrección múltiple</h2>
+        <p class="section-lead">Shapiro-Wilk rechazó normalidad en varios grupos, así que la comparación global usa Kruskal-Wallis y los pares Mann-Whitney con corrección de Holm sobre 18 comparaciones; el tamaño del efecto es el delta de Cliff.</p>
+      </div>
+      <div class="grid gap-5 lg:grid-cols-5">
+        <div class="card reveal overflow-x-auto p-0 lg:col-span-2">
+          <table class="data-table" id="table-primary">
+            <caption class="px-5 pt-4 text-left font-semibold text-white">Kruskal-Wallis (global)</caption>
+            <thead><tr><th scope="col">N</th><th scope="col">Métrica</th><th scope="col">H</th><th scope="col">p Holm</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="card reveal overflow-x-auto p-0 lg:col-span-3">
+          <div class="flex flex-wrap items-center justify-between gap-3 px-5 pt-4">
+            <p class="font-semibold text-white">Comparaciones por pares</p>
+            <div class="seg" role="group" aria-label="Métrica de comparación">
+              <button class="seg-btn is-active" data-pair="energy_joules" aria-pressed="true">Energía</button>
+              <button class="seg-btn" data-pair="throughput_observation_tps" aria-pressed="false">TPS</button>
+              <button class="seg-btn" data-pair="completion_fraction" aria-pressed="false">Completitud</button>
+            </div>
+          </div>
+          <table class="data-table" id="table-pairwise">
+            <caption class="sr-only">Mann-Whitney con corrección de Holm</caption>
+            <thead><tr><th scope="col">N</th><th scope="col">Par</th><th scope="col">U</th><th scope="col">p Holm</th><th scope="col"><span class="normal-case">δ</span> Cliff</th><th scope="col"><span class="normal-case">α = 0.05</span></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card reveal mt-5 border-pos/30 bg-gradient-to-br from-pos/10 to-transparent">
+        <p class="eyebrow !mb-2">Conclusión</p>
+        <p class="text-lg text-white">Los resultados respaldan la hipótesis: PBFT y PoS consumieron significativamente menos energía que PoW en ambos tamaños de red, y completaron más ejecuciones. También aparecen trade-offs: PoS tuvo el menor costo pero una ejecución sin progreso en cada tamaño; PBFT fue el más estable con 3 nodos pero no completó la carga en ninguna ejecución con 4.</p>
+      </div>
+    </section>
+
+    <!-- ================= Limitaciones ================= -->
+    <section id="limitaciones" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">07 · Alcance</p>
+        <h2 class="section-title">Lo que estos datos <span class="text-pow">no</span> dicen</h2>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="limit reveal"><i class="bi bi-cpu" aria-hidden="true"></i><p>La energía es un estimador basado en CPU y TDP, no una medición con hardware; no incluye incertidumbre sistemática del modelo.</p></div>
+        <div class="limit reveal"><i class="bi bi-hdd-network" aria-hidden="true"></i><p>Solo redes de 3 y 4 nodos en un único equipo, con carga fija y red emulada. n = 5, 7, saturación, ataques y VPS son trabajo futuro.</p></div>
+        <div class="limit reveal"><i class="bi bi-shield-exclamation" aria-hidden="true"></i><p>Con 3 nodos PBFT tiene f = 0 y quórum de una réplica: su baja latencia no evidencia tolerancia bizantina.</p></div>
+        <div class="limit reveal"><i class="bi bi-code-slash" aria-hidden="true"></i><p>Son implementaciones simplificadas en Python (PBFT sin cambio de vista ni checkpoints; PoS sin slashing), no las de plataformas en producción.</p></div>
+        <div class="limit reveal"><i class="bi bi-hourglass-split" aria-hidden="true"></i><p>La observación se cierra 5 s después del envío; el throughput no representa capacidad máxima.</p></div>
+        <div class="limit reveal"><i class="bi bi-question-circle" aria-hidden="true"></i><p>No se identificó la causa del colapso de PoW con 4 nodos ni de las ejecuciones sin progreso de PoS.</p></div>
+      </div>
+    </section>
+
+    <!-- ================= Reproducir ================= -->
+    <section id="reproducir" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">08 · Reproducibilidad</p>
+        <h2 class="section-title">Corre el framework</h2>
+        <p class="section-lead">Requiere Python 3.13 y Docker. El repositorio incluye la base SQLite, las configuraciones congeladas y los datos crudos de las 90 ejecuciones.</p>
+      </div>
+      <div class="grid gap-5 lg:grid-cols-2">
+        <div class="card reveal p-0">
+          <div class="terminal-bar"><span></span><span></span><span></span><p>bash</p>
+            <button class="copy-btn" data-copy="#cmd-setup" aria-label="Copiar comandos"><i class="bi bi-clipboard" aria-hidden="true"></i></button></div>
+<pre id="cmd-setup" class="terminal"><code><span class="c"># instalar</span>
+python -m venv .venv &amp;&amp; source .venv/bin/activate
+pip install -r requirements.txt
+
+<span class="c"># validar la configuración sin tocar Docker</span>
+python run_experiment.py run --config experiment.yaml --dry-run
+
+<span class="c"># ejecutar y analizar</span>
+python run_experiment.py run --config experiment.yaml --analyze-after</code></pre>
+        </div>
+        <div class="card reveal p-0">
+          <div class="terminal-bar"><span></span><span></span><span></span><p>bash</p>
+            <button class="copy-btn" data-copy="#cmd-audit" aria-label="Copiar comandos"><i class="bi bi-clipboard" aria-hidden="true"></i></button></div>
+<pre id="cmd-audit" class="terminal"><code><span class="c"># consultar la campaña publicada</span>
+python run_experiment.py --db results/final_campaign_20261014/experiments.db list
+
+<span class="c"># regenerar tablas, pruebas y figuras (verifica hashes)</span>
+python analysis/final_results.py
+
+<span class="c"># dashboard local</span>
+docker compose up -d   <span class="c"># http://localhost:5000</span></code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto grid max-w-7xl gap-8 px-5 py-12 md:grid-cols-3">
+      <div>
+        <p class="font-semibold text-white">Framework experimental para la evaluación energética y de desempeño de algoritmos de consenso en blockchain</p>
+        <p class="mt-2 text-sm text-slate-400">Universidad Libre · Bogotá, Colombia · 2026</p>
+      </div>
+      <div class="text-sm">
+        <p class="eyebrow !mb-2">Autores</p>
+        <p>Favio Alejandro Bernal González <a class="link" href="https://orcid.org/0009-0002-9210-5688" target="_blank" rel="noopener">ORCID</a></p>
+        <p>Luisa María López Rugeles <a class="link" href="https://orcid.org/0009-0004-6906-9740" target="_blank" rel="noopener">ORCID</a></p>
+      </div>
+      <div class="text-sm">
+        <p class="eyebrow !mb-2">Datos</p>
+        <p>Todas las cifras de esta página se generan desde <code class="code-inline">results/final_campaign_20261014/final_results/</code>.</p>
+        <p class="mt-2"><a class="link" data-repo-link href="#" target="_blank" rel="noopener"><i class="bi bi-github" aria-hidden="true"></i> Repositorio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/echarts/echarts.min.js" defer></script>
+  <script src="assets/vendor/echarts/echarts-gl.min.js" defer></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

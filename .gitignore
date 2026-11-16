@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Ejecuciones locales (la campaña publicada sí se versiona)
+results/*
+!results/final_campaign_20261014/
+results/final_campaign_20261014/**/__pycache__/
+.experiment.lock
+*.log
+!results/final_campaign_20261014/**/*.log
+
+# Sitio
+site/node_modules/
+
+# Editor / SO
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,6 @@
+{"event": "ready", "node_id": 1, "port": 5000, "difficulty_bits": 20}
+{"event":"block_received","index":1,"miner_id":0,"tx_count":0,"ts":1792029166.591107,"node_id":1}
+{"event":"block_received","index":2,"miner_id":0,"tx_count":0,"ts":1792029168.1754909,"node_id":1}
+{"event":"block_mined","index":3,"miner_id":1,"tx_count":0,"ts":1792029168.2471902,"node_id":1}
+{"event":"block_received","index":3,"miner_id":0,"tx_count":0,"ts":1792029168.2973158,"node_id":1}
+{"event":"block_mined","index":4,"miner_id":1,"tx_count":0,"ts":1792029170.6462579,"node_id":1}

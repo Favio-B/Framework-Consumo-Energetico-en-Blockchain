@@ -1,0 +1,45 @@
+experiment:
+  name: final_n3_baseline
+  repetitions: 10
+  algorithms:
+  - pow
+  - pos
+  - pbft
+  seed: 20261014
+network:
+  driver: pumba
+  nodes: 3
+  latency_ms: 50
+  bandwidth_kbps: 10000
+  packet_loss_pct: 0.0
+  tc_image: ghcr.io/alexei-led/pumba-alpine-nettools@sha256:bdcfacdd0c42f64cd280319d6dd5d3911f33425ce4a5168bb1b7de9570b72cd1
+  pumba_image: gaiaadm/pumba@sha256:b1226a1db9a82fdb74eb39ae36ef25ac576910edb569ae94dad3b640340656e8
+workload:
+  tx_count: 100
+  tx_rate_tps: 50
+hardware:
+  tdp_watts: 45
+resources:
+  cpu_limit: '2.0'
+  mem_limit: 2g
+pow:
+  difficulty_bits: 16
+  block_size: 20
+  confirmations: 1
+  image: sha256:bcd80f2d1811e54c15819018c6436bd5142b7eae6964f99adbfd2196bb6655cb
+pos:
+  slot_seconds: 0.5
+  block_size: 20
+  confirmations: 1
+  image: sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540
+runtime:
+  warmup_seconds: 30
+  settle_seconds: 5
+  run_timeout_seconds: 600
+  sample_interval_seconds: 1.0
+  paper_instrumentation: true
+storage:
+  results_dir: C:\Users\febm6\OneDrive\Escritorio\Framework\blockchain-framework\results\final_campaign_20261014
+  sqlite_path: C:\Users\febm6\OneDrive\Escritorio\Framework\blockchain-framework\results\final_campaign_20261014\experiments.db
+pbft:
+  image: sha256:17342511ff755a9a9441dda07bd9ce637dbe61c2161ba4ad23314a3de07b7d29

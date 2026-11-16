@@ -1,0 +1,2 @@
+2026-10-14T20:38:11 0ed38d42 start algorithm=pbft rep=1
+2026-10-14T20:38:30 0ed38d42 done tps=45.02 latency_ms_p50=2.6 energy_joules=5.04

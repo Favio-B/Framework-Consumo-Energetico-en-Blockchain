@@ -1,0 +1,3 @@
+{"event": "ready", "node_id": 1, "port": 5000, "slot_seconds": 0.5}
+{"event":"block_proposed","index":1,"proposer_id":1,"tx_count":0,"ts":1792028187.5257185,"node_id":1}
+[n1] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')

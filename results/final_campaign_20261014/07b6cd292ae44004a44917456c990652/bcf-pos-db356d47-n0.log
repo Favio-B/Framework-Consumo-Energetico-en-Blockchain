@@ -1,0 +1,2 @@
+{"event": "ready", "node_id": 0, "port": 5000, "slot_seconds": 0.5}
+{"event":"block_received","index":1,"proposer_id":1,"tx_count":0,"ts":1792028187.5310817,"node_id":0}

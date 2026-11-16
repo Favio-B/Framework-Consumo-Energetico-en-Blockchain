@@ -1,0 +1,367 @@
+{
+  "algorithm": "pos",
+  "artefacts_dir": "C:\\Users\\febm6\\OneDrive\\Escritorio\\Framework\\blockchain-framework\\results\\final_campaign_20261014\\0bd99db99fb44a5dbe974a5c8d539516",
+  "bandwidth_kbps_applied": 10000,
+  "bytes_per_tx": {
+    "rx_per_tx": 0.0,
+    "total_per_tx": 0.0,
+    "tx_per_tx": 0.0
+  },
+  "committed_by_quorum": 0,
+  "completion_fraction": 0.0,
+  "completion_status": "zero",
+  "energy_joules": 3.2742827344159884,
+  "experiment_name": "final_n4_baseline",
+  "finality_ms": {
+    "max": 0.0,
+    "mean": 0.0,
+    "n": 0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0
+  },
+  "latency_ms": {
+    "max": 0.0,
+    "mean": 0.0,
+    "n": 0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0
+  },
+  "latency_ms_applied": 50,
+  "module_native": {
+    "algorithm": "pos",
+    "blocks_proposed_per_node": {
+      "0": 0,
+      "1": 0,
+      "2": 1,
+      "3": 0
+    },
+    "commits_by_request": {},
+    "entry_node_id": 0,
+    "node_count": 4,
+    "per_node": {
+      "0": {
+        "blocks_proposed": 0,
+        "committed_count": 0
+      },
+      "1": {
+        "blocks_proposed": 0,
+        "committed_count": 0
+      },
+      "2": {
+        "blocks_proposed": 1,
+        "committed_count": 0
+      },
+      "3": {
+        "blocks_proposed": 0,
+        "committed_count": 0
+      }
+    },
+    "run_id": "09df4fa2",
+    "submits": {
+      "09df4fa2-0": 1792029114.0051253,
+      "09df4fa2-1": 1792029114.0259573,
+      "09df4fa2-10": 1792029114.2129292,
+      "09df4fa2-11": 1792029114.2335088,
+      "09df4fa2-12": 1792029114.2540002,
+      "09df4fa2-13": 1792029114.2745268,
+      "09df4fa2-14": 1792029114.2955153,
+      "09df4fa2-15": 1792029114.3164933,
+      "09df4fa2-16": 1792029114.3371663,
+      "09df4fa2-17": 1792029114.358687,
+      "09df4fa2-18": 1792029114.3790863,
+      "09df4fa2-19": 1792029114.399818,
+      "09df4fa2-2": 1792029114.0467105,
+      "09df4fa2-20": 1792029114.4209137,
+      "09df4fa2-21": 1792029114.4414234,
+      "09df4fa2-22": 1792029114.462032,
+      "09df4fa2-23": 1792029114.4829102,
+      "09df4fa2-24": 1792029114.5036764,
+      "09df4fa2-25": 1792029114.5243244,
+      "09df4fa2-26": 1792029114.544827,
+      "09df4fa2-27": 1792029114.56541,
+      "09df4fa2-28": 1792029114.5859895,
+      "09df4fa2-29": 1792029114.6082754,
+      "09df4fa2-3": 1792029114.0673623,
+      "09df4fa2-30": 1792029114.6287732,
+      "09df4fa2-31": 1792029114.649241,
+      "09df4fa2-32": 1792029114.669725,
+      "09df4fa2-33": 1792029114.6922588,
+      "09df4fa2-34": 1792029114.7130227,
+      "09df4fa2-35": 1792029114.733647,
+      "09df4fa2-36": 1792029114.7544928,
+      "09df4fa2-37": 1792029114.7756152,
+      "09df4fa2-38": 1792029114.7967372,
+      "09df4fa2-39": 1792029114.8174682,
+      "09df4fa2-4": 1792029114.0879433,
+      "09df4fa2-40": 1792029114.837963,
+      "09df4fa2-41": 1792029114.8586748,
+      "09df4fa2-42": 1792029114.8793187,
+      "09df4fa2-43": 1792029114.8999987,
+      "09df4fa2-44": 1792029114.9203806,
+      "09df4fa2-45": 1792029114.941289,
+      "09df4fa2-46": 1792029114.9618506,
+      "09df4fa2-47": 1792029114.9825954,
+      "09df4fa2-48": 1792029115.0032833,
+      "09df4fa2-49": 1792029115.0244246,
+      "09df4fa2-5": 1792029114.109043,
+      "09df4fa2-50": 1792029115.0453146,
+      "09df4fa2-51": 1792029115.0659575,
+      "09df4fa2-52": 1792029115.086532,
+      "09df4fa2-53": 1792029115.1071556,
+      "09df4fa2-54": 1792029115.1276872,
+      "09df4fa2-55": 1792029115.1481514,
+      "09df4fa2-56": 1792029115.1696525,
+      "09df4fa2-57": 1792029115.1931763,
+      "09df4fa2-58": 1792029115.2139838,
+      "09df4fa2-59": 1792029115.2346826,
+      "09df4fa2-6": 1792029114.1299608,
+      "09df4fa2-60": 1792029115.2552917,
+      "09df4fa2-61": 1792029115.2758038,
+      "09df4fa2-62": 1792029115.296435,
+      "09df4fa2-63": 1792029115.3170798,
+      "09df4fa2-64": 1792029115.3376663,
+      "09df4fa2-65": 1792029115.3586,
+      "09df4fa2-66": 1792029115.3791695,
+      "09df4fa2-67": 1792029115.3997958,
+      "09df4fa2-68": 1792029115.4208646,
+      "09df4fa2-69": 1792029115.4416142,
+      "09df4fa2-7": 1792029114.1504376,
+      "09df4fa2-70": 1792029115.4622176,
+      "09df4fa2-71": 1792029115.4827325,
+      "09df4fa2-72": 1792029115.503489,
+      "09df4fa2-73": 1792029115.5241115,
+      "09df4fa2-74": 1792029115.5447211,
+      "09df4fa2-75": 1792029115.5653782,
+      "09df4fa2-76": 1792029115.5861225,
+      "09df4fa2-77": 1792029115.6077952,
+      "09df4fa2-78": 1792029115.630144,
+      "09df4fa2-79": 1792029115.6515315,
+      "09df4fa2-8": 1792029114.1712887,
+      "09df4fa2-80": 1792029115.6721828,
+      "09df4fa2-81": 1792029115.6930995,
+      "09df4fa2-82": 1792029115.7138143,
+      "09df4fa2-83": 1792029115.7348025,
+      "09df4fa2-84": 1792029115.7554193,
+      "09df4fa2-85": 1792029115.7762299,
+      "09df4fa2-86": 1792029115.7977617,
+      "09df4fa2-87": 1792029115.8183987,
+      "09df4fa2-88": 1792029115.8417647,
+      "09df4fa2-89": 1792029115.8624737,
+      "09df4fa2-9": 1792029114.1919289,
+      "09df4fa2-90": 1792029115.8831272,
+      "09df4fa2-91": 1792029115.9039335,
+      "09df4fa2-92": 1792029115.9243386,
+      "09df4fa2-93": 1792029115.9450288,
+      "09df4fa2-94": 1792029115.9653986,
+      "09df4fa2-95": 1792029115.9861715,
+      "09df4fa2-96": 1792029116.0069602,
+      "09df4fa2-97": 1792029116.0278184,
+      "09df4fa2-98": 1792029116.0488071,
+      "09df4fa2-99": 1792029116.0698395
+    }
+  },
+  "network_totals": {
+    "per_container": {
+      "bcf-pos-09df4fa2-n0": {
+        "rx_bytes": 204610,
+        "tx_bytes": 195827
+      },
+      "bcf-pos-09df4fa2-n1": {
+        "rx_bytes": 189135,
+        "tx_bytes": 189009
+      },
+      "bcf-pos-09df4fa2-n2": {
+        "rx_bytes": 189093,
+        "tx_bytes": 188961
+      },
+      "bcf-pos-09df4fa2-n3": {
+        "rx_bytes": 189291,
+        "tx_bytes": 189009
+      }
+    },
+    "total_bytes": 1534935,
+    "total_rx_bytes": 772129,
+    "total_tx_bytes": 762806
+  },
+  "node_count": 4,
+  "packet_loss_pct_applied": 0.0,
+  "provenance": {
+    "cpu_sampling": "Docker stats streaming, approximately 1 Hz",
+    "energy_estimator": "sum(cpu_avg/100/num_cpus*TDP*sample_duration)",
+    "images": {
+      "bcf-pos-09df4fa2-n0": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540",
+      "bcf-pos-09df4fa2-n1": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540",
+      "bcf-pos-09df4fa2-n2": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540",
+      "bcf-pos-09df4fa2-n3": "sha256:2fec519be6f841e32b7fcf1d91d07d1a59ea1d6fb7fae26a781ec6a54f2fe540"
+    },
+    "methodology": "fixed-post-submit-window-v3",
+    "network_effective": {
+      "bcf-pos-09df4fa2-n0": [
+        {
+          "handle": "80b0:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 17407688885956324550
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pos-09df4fa2-n1": [
+        {
+          "handle": "80b3:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 4627784245484294738
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pos-09df4fa2-n2": [
+        {
+          "handle": "80b1:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 14985902567364297712
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ],
+      "bcf-pos-09df4fa2-n3": [
+        {
+          "handle": "80b2:",
+          "kind": "netem",
+          "options": {
+            "delay": {
+              "correlation": 0,
+              "delay": 0.05,
+              "jitter": 0
+            },
+            "ecn": false,
+            "gap": 0,
+            "limit": 1000,
+            "rate": {
+              "celloverhead": 0,
+              "cellsize": 0,
+              "packetoverhead": 0,
+              "rate": 1250000
+            },
+            "seed": 1498268360364918011
+          },
+          "refcnt": 23,
+          "root": true
+        }
+      ]
+    },
+    "num_cpus_energy": 22,
+    "observation_end_unix": 1792029121.0927064,
+    "observation_start_unix": 1792029113.9805257,
+    "post_submit_settle_seconds": 5.0,
+    "run_timeout_role": "network-rule lifetime; not a completion timeout",
+    "sampling_start_unix": {
+      "bcf-pos-09df4fa2-n0": 1792029111.7485504,
+      "bcf-pos-09df4fa2-n1": 1792029112.755665,
+      "bcf-pos-09df4fa2-n2": 1792029112.7585716,
+      "bcf-pos-09df4fa2-n3": 1792029112.7589364
+    }
+  },
+  "quorum": 3,
+  "repetition": 5,
+  "resource_summary": {
+    "bcf-pos-09df4fa2-n0": {
+      "cpu_percent_avg": 4.6156349580133575,
+      "cpu_percent_peak": 20.644324324324327,
+      "duration_s": 9.114605903625488,
+      "memory_mb_avg": 13.069140625,
+      "memory_mb_peak": 14.7109375,
+      "rx_bytes": 204610,
+      "sample_count": 10,
+      "tx_bytes": 195827
+    },
+    "bcf-pos-09df4fa2-n1": {
+      "cpu_percent_avg": 4.922402791676959,
+      "cpu_percent_peak": 19.60736609119079,
+      "duration_s": 8.107901811599731,
+      "memory_mb_avg": 13.662760416666666,
+      "memory_mb_peak": 15.4609375,
+      "rx_bytes": 189135,
+      "sample_count": 9,
+      "tx_bytes": 189009
+    },
+    "bcf-pos-09df4fa2-n2": {
+      "cpu_percent_avg": 4.773082750117489,
+      "cpu_percent_peak": 19.863469026548675,
+      "duration_s": 8.106815814971924,
+      "memory_mb_avg": 13.466145833333334,
+      "memory_mb_peak": 15.1640625,
+      "rx_bytes": 189093,
+      "sample_count": 9,
+      "tx_bytes": 188961
+    },
+    "bcf-pos-09df4fa2-n3": {
+      "cpu_percent_avg": 4.860040748350724,
+      "cpu_percent_peak": 19.433035633739287,
+      "duration_s": 8.107234477996826,
+      "memory_mb_avg": 13.516927083333334,
+      "memory_mb_peak": 15.109375,
+      "rx_bytes": 189291,
+      "sample_count": 9,
+      "tx_bytes": 189009
+    }
+  },
+  "run_id": "0bd99db99fb44a5dbe974a5c8d539516",
+  "started_at": "2026-10-15T01:51:42.373657+00:00",
+  "submit_window_s": 7.112178802490234,
+  "submitted": 100,
+  "tdp_watts": 45,
+  "throughput_observation_tps": 0.0,
+  "throughput_tps": 0.0,
+  "tx_count": 100,
+  "tx_rate_tps": 50
+}

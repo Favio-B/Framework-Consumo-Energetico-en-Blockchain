@@ -1,0 +1,2 @@
+2026-10-14T20:42:03 67fcccb9 start algorithm=pbft rep=2
+2026-10-14T20:42:23 67fcccb9 done tps=45.20 latency_ms_p50=1.9 energy_joules=5.15

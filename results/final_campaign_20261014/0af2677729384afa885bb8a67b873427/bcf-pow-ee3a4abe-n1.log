@@ -1,0 +1,10 @@
+{"event": "ready", "node_id": 1, "port": 5000, "difficulty_bits": 14}
+{"event":"block_mined","index":1,"miner_id":1,"tx_count":0,"ts":1792029556.6919131,"node_id":1}
+[n1] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":2,"miner_id":1,"tx_count":0,"ts":1792029556.9641662,"node_id":1}
+[n1] send_fail peer=2 err=ConnectionRefusedError(111, 'Connection refused')
+{"event":"block_mined","index":3,"miner_id":1,"tx_count":0,"ts":1792029557.0348444,"node_id":1}
+{"event":"block_mined","index":4,"miner_id":1,"tx_count":0,"ts":1792029557.046948,"node_id":1}
+{"event":"block_mined","index":5,"miner_id":1,"tx_count":0,"ts":1792029557.3170347,"node_id":1}
+{"event":"block_mined","index":6,"miner_id":1,"tx_count":0,"ts":1792029557.4864292,"node_id":1}
+{"event":"block_mined","index":7,"miner_id":1,"tx_count":0,"ts":1792029557.8303561,"node_id":1}

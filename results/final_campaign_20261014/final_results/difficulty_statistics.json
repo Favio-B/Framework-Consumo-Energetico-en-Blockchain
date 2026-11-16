@@ -1,0 +1,32 @@
+[
+  {
+    "metric": "energy_joules",
+    "test": "Kruskal-Wallis across 4 difficulty groups",
+    "statistic": 7.352195121951212,
+    "p_raw": 0.06148032003988769,
+    "n_each": 10,
+    "population": "all trials",
+    "p_holm": 0.06148032003988769,
+    "reject_at_0_05": false
+  },
+  {
+    "metric": "throughput_observation_tps",
+    "test": "Kruskal-Wallis across 4 difficulty groups",
+    "statistic": 28.143071921982976,
+    "p_raw": 3.3893605382065806e-06,
+    "n_each": 10,
+    "population": "all trials",
+    "p_holm": 7.370565442155958e-06,
+    "reject_at_0_05": true
+  },
+  {
+    "metric": "completion_fraction",
+    "test": "Kruskal-Wallis across 4 difficulty groups",
+    "statistic": 28.80846798936386,
+    "p_raw": 2.4568551473853193e-06,
+    "n_each": 10,
+    "population": "all trials",
+    "p_holm": 7.370565442155958e-06,
+    "reject_at_0_05": true
+  }
+]

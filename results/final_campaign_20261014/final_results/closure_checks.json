@@ -1,0 +1,11 @@
+{
+  "closed_UTC": "2026-10-15T02:12:28.672021+00:00",
+  "unit_tests_passed": 209,
+  "docker_tests_deselected": 7,
+  "real_instrumentation_pilots": 3,
+  "final_trials": 90,
+  "container_resource_records": 300,
+  "json_csv_svg_png_parsing": "passed",
+  "historical_unchanged": true,
+  "scope": "Final dataset and analysis; known prototype limitations remain documented"
+}
