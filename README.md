@@ -150,4 +150,4 @@ El workflow `.github/workflows/pages.yml` publica `site/` en GitHub Pages en cad
 - **Favio Alejandro Bernal González** — [ORCID 0009-0002-9210-5688](https://orcid.org/0009-0002-9210-5688)
 - **Luisa María López Rugeles** — [ORCID 0009-0004-6906-9740](https://orcid.org/0009-0004-6906-9740)
 
-Universidad Libre, Bogotá, Colombia. Para citar este trabajo usa [`CITATION.cff`](CITATION.cff).
+Universidad Libre, Bogotá, Colombia. Para citar: [`CITATION.cff`](CITATION.cff).
