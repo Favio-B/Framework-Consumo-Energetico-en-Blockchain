@@ -1,5 +1,7 @@
 # Framework experimental de consenso blockchain
 
+### 🌐 [Ver resultados interactivos →](https://favio-b.github.io/Framework-Consumo-Energetico-en-Blockchain/)
+
 [![CI](https://github.com/Favio-B/Framework-Consumo-Energetico-en-Blockchain/actions/workflows/ci.yml/badge.svg)](https://github.com/Favio-B/Framework-Consumo-Energetico-en-Blockchain/actions/workflows/ci.yml)
 [![Pages](https://github.com/Favio-B/Framework-Consumo-Energetico-en-Blockchain/actions/workflows/pages.yml/badge.svg)](https://favio-b.github.io/Framework-Consumo-Energetico-en-Blockchain/)
 ![Python](https://img.shields.io/badge/python-3.13-3776AB?logo=python&logoColor=white)
@@ -9,8 +11,6 @@ Framework reproducible para **medir y comparar el consumo energético estimado y
 **Proof of Work**, **Proof of Stake** y **PBFT** bajo las mismas condiciones de red, carga y recursos.
 Cada nodo corre en un contenedor Docker, la red se emula con Pumba (tc/netem) y la energía se estima
 con un modelo proxy basado en CPU y TDP.
-
-**Resultados interactivos:** https://favio-b.github.io/Framework-Consumo-Energetico-en-Blockchain/
 
 > Proyecto de investigación — Ingeniería de Sistemas, Universidad Libre (Bogotá), presentado en COI 2026-2.
 
