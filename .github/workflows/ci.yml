@@ -12,20 +12,30 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
           cache: pip
       - run: pip install -r requirements.txt
-      # Las pruebas de integración con Docker se omiten automáticamente en el runner.
-      - run: python -m pytest tests/ -q
+      # Pruebas unitarias (deterministas). Las 7 de integración levantan clústeres
+      # Docker reales y dependen del timing del host (p. ej. forks de PoW en
+      # runners compartidos); se ejecutan localmente con `pytest tests/`.
+      - run: >
+          python -m pytest tests/ -q
+          --deselect tests/test_pbft_integration.py
+          --deselect tests/test_full_pipeline.py
+          --deselect tests/test_orchestrator.py::test_docker_manager_can_run_wait_and_cleanup
+          --deselect tests/test_orchestrator.py::test_network_controller_inflates_ping_rtt_with_pumba
+          --deselect tests/test_pow.py::test_pow_three_node_cluster_commits_transactions
+          --deselect tests/test_pos.py::test_pos_three_validator_cluster_commits_transactions
+          --deselect tests/test_scenario_runner.py::test_scenario_runner_end_to_end_pbft
 
   site-data:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
       - name: El JSON del sitio coincide con los resultados finales

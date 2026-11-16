@@ -103,6 +103,9 @@ Para usar `tc` directamente en un host Linux, cambia `network.driver: tc` en el 
 pytest tests/ -q      # las 7 pruebas de integración se omiten si Docker no está disponible
 ```
 
+El CI ejecuta solo las 209 pruebas unitarias: las de integración levantan clústeres Docker reales
+y su resultado depende del timing del host (por ejemplo, forks de PoW en runners compartidos).
+
 ## Reproducibilidad de la campaña publicada
 
 `results/final_campaign_20261014/` contiene la base SQLite, configuración, métricas, eventos crudos y
